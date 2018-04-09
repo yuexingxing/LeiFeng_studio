@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/base_m_m"
+    android:background="@color/launch_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+        <View
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:background="@drawable/icon_slogen_launch">
+        </View>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_launcher">
+        </View>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center|left"
+                android:text="全民雷锋"/>
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="bottom|left"
+                android:text="版本号：1.0.0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.tajiang.leifeng.view.circularprogressview.CircularProgressView
+        android:id="@+id/cpv_launch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:cpv_animAutostart="true"
+        app:cpv_color="@color/com_green"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="3dp" />
+
+</RelativeLayout>

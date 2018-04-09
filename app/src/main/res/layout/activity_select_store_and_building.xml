@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_white">
+
+    <!--<LinearLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+    <!--<ImageView-->
+    <!--android:layout_width="170dp"-->
+    <!--android:layout_height="135dp"-->
+    <!--android:src="@mipmap/bg_empty_img_mess_deliver"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_add_deliver_dorm"-->
+    <!--style="@style/text_14_green"-->
+    <!--android:layout_marginTop="@dimen/common_margin_16"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/img_btn_img_mess_deliver"-->
+    <!--android:gravity="center"-->
+    <!--android:text="添加楼栋"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_root_content"
+        style="@style/ll_m_m_h"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_12_black_1"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="选择食堂" />
+
+            <View style="@style/driver_h"></View>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <View style="@style/driver_v"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_12_black_1"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="配送楼栋" />
+
+            <View style="@style/driver_h"></View>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_store_apartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

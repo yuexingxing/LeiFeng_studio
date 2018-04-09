@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_root_view"
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:background="@drawable/dialog_reminder_bg_01" >
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tv_reminder_content_launch"
+                    android:visibility="gone"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/text_black_1"
+                    android:gravity="center"
+                    android:text="送达时间可能稍有延迟，确定点餐吗？"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/tv_reminder_content_after_launch"
+                    android:visibility="visible"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="现在点饭"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red_orange"
+                        android:textSize="15sp"
+                        android:text="下午"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="配送呢，确定要提前点饭饭吗？"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/driver_h"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/view_cancel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/slt_rect_left_corner_white"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/text_black_2"
+                    android:textSize="14sp" />
+
+                <View style="@style/driver_v"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/view_ensure"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/slt_rect_right_corner_white"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/com_green"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_imgNavLeft"
+    android:layout_width="@dimen/common_nav_left_right_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_nav_bg_slt_left_right"
+    android:paddingLeft="10dp" >
+
+    <ImageView
+        android:layout_width="@dimen/common_nav_right_icon_size"
+        android:layout_height="@dimen/common_nav_right_icon_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_nav_left_back" />
+
+</FrameLayout>

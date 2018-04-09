@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_w_w"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rect_chooseUserAdress"
+        style="@style/ll_m_w_v">
+
+        <RelativeLayout
+            style="@style/base_m_m"
+            android:layout_height="90dp"
+            android:background="@drawable/slt_rect_white"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding">
+
+            <RelativeLayout
+                style="@style/ll_w_w_h"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    style="@style/ll_w_w_v"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_nameUserAdress"
+                        style="@style/text_14_black_1"
+                        android:singleLine="true"
+                        android:text="丁坤" />
+
+                    <TextView
+                        android:id="@+id/tv_schoolUserAdress"
+                        style="@style/text_14_black_3"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:text="浙江传媒大学508" />
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvSexUserAdress"-->
+                    <!--style="@style/text_14_black_1"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:text="男神"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_phoneUserAdress"-->
+                    <!--style="@style/text_14_black_1"-->
+                    <!--android:layout_marginLeft="24dp"-->
+                    <!--android:text="15869466544"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_address_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_icon_address" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivIsDefalutAdress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_default_adress"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rectSetAdressDefault"
+            style="@style/ll_m_w_v"
+            android:background="@drawable/slt_rect_white"
+
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding">
+
+            <View style="@style/driver_h" />
+
+            <LinearLayout
+                style="@style/ll_m_w_h_c"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/ivSelectDefaultAdress"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/icon_radio_normal" />
+
+                <TextView
+                    android:id="@+id/tvSelectDefaultAdress"
+                    style="@style/text_12_black_1"
+                    android:layout_marginLeft="8dp"
+                    android:text="设为默认" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View style="@style/driver_h" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_payEmpty"
+    style="@style/ll_m_m_v"
+    android:background="@color/white"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_pay_empty" />
+
+    <TextView
+        style="@style/text_14_black_3"
+        android:layout_marginTop="20dp"
+        android:text="你的饭篓空空如也，快去点饭吧" />
+
+    <LinearLayout
+        android:id="@+id/view_backHomeFoodPay"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/slt_btn_rect_green"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/com_btm_icon_select_food_normal" />
+
+        <TextView
+            style="@style/base_w_w"
+            android:layout_marginLeft="5dp"
+            android:text="返回首页"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

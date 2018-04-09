@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              style="@style/ll_m_w_v"
+              android:background="@color/white"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+             android:id="@+id/tv_timeOrderUserPassMe"
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:text="2015-08-16" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_nameStoreOrderUserPassMe"
+            style="@style/text_14_black_1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="美食城餐厅" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        style="@style/ll_m_w_h"
+        android:layout_height="104dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_picOrderUserPassMe"
+            android:layout_width="80dp"
+            fresco:roundedCornerRadius="3dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            fresco:roundingBorderWidth="1px"
+            fresco:roundingBorderColor="@color/com_driver"
+            fresco:placeholderImage="@drawable/icon_empty_good"/>
+
+        <RelativeLayout
+            style="@style/base_m_m"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                 android:id="@+id/tv_nameOrderOrderUserPassMe"
+                style="@style/text_14_black_2"
+                android:text="海鲜全套餐" />
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_14_black_2"
+                    android:text="总价：￥" />
+
+                <TextView
+                     android:id="@+id/tv_sumMoneyOrderUserPassMe"
+                    style="@style/text_14_black_1"
+                    android:text="36.00" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_enter_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

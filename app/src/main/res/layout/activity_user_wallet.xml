@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/com_root_layout_ll_gray">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_title_bg_root" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_nav_root_height"
+        android:background="@color/common_title_bg_root"
+        android:paddingLeft="@dimen/common_margin_10"
+        android:paddingRight="@dimen/common_margin_10">
+
+        <TextView
+            android:id="@+id/wallet_nav_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_nav_left_back" />
+
+
+        <TextView
+            android:id="@+id/tv_nameStoreSelectFood"
+            style="@style/text_16_black_1"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="我的钱包"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/common_title_bg_root"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rect_transcationDetailWallet"
+            style="@style/base_m_w"
+            android:layout_height="90dp"
+            android:background="@drawable/slt_rect_white">
+
+            <ImageView
+                android:id="@+id/wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/mine_wallet_balance" />
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/wallet_balance"
+                android:text="钱包余额（元）" />
+
+
+            <LinearLayout
+                style="@style/ll_w_w_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvNumWellat"
+                    style="@style/text_16_black_1"
+                    android:text="200.00"
+                    android:textColor="@color/red"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_enter_gray" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rectPassWordPayWallet"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/slt_rect_white">
+
+            <LinearLayout style="@style/ll_w_m_h_c">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/mine_modify_the_payment_password" />
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付密码" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_enter_gray" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_walletAdd"
+            style="@style/btn_green"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/button_add_wallet" />
+
+        <Button
+            android:id="@+id/btn_walletShow"
+            style="@style/btn_green"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="提现" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_actionImgWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="16dp"
+                fresco:viewAspectRatio="1.4" />
+
+        </FrameLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/rect_walletAdd"-->
+        <!--style="@style/ll_m_w_h_c"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/shape_rect_round_green"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+        <!--style="@style/text_16_white"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:text="充值"/>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m"
+    android:background="@color/white" >
+
+    <LinearLayout
+        style="@style/ll_m_w_v_c"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_pass_success" />
+
+        <TextView
+            style="@style/text_14_black_2"
+            android:text="信息已提交，请等待我们火速审查" />
+
+        <LinearLayout
+            android:id="@+id/view_backHomeOrderRap"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/slt_btn_rect_green"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/com_btm_icon_select_food_normal" />
+
+            <TextView
+                style="@style/base_w_w"
+                android:layout_marginLeft="5dp"
+                android:text="返回首页"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

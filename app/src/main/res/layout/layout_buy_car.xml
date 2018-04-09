@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    style="@style/base_m_w"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:id="@+id/rect_messBuyCar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_buycar_mess"/>
+
+            <TextView
+                android:id="@+id/tv_messBuyCar"
+                style="@style/text_14_black_1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="3dp"
+                android:text="食堂吃"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rect_takeAwayBuyCar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+
+
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_buycar_take_away"/>
+
+            <TextView
+                android:id="@+id/tv_takeAwayBuyCar"
+                style="@style/text_14_black_1"
+                android:layout_marginLeft="3dp"
+                android:text="带走"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rect_passMeBuyCar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_buycar_pass_me"/>
+
+            <TextView
+                android:id="@+id/tv_passMeBuyCar"
+                style="@style/text_14_black_1"
+                android:layout_marginLeft="3dp"
+                android:text="送给我"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_buyCar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/icon_buycar"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect_round_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/ll_m_w_v"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/text_12_black_3"
+                android:text="添加快捷标签" />
+
+            <com.tajiang.leifeng.view.FlowlayoutTags
+                android:id="@+id/fl_red2"
+                style="@style/FlowlayoutTags.Beauty_Red2"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/et_tag"
+                style="@style/text_12_black_1"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:hint="点击输入你需要的添加的备注信息"
+                android:minHeight="60dp" />
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_negetiveHintDialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slt_rect_white"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_black_2"
+                android:textSize="14sp" />
+
+            <View style="@style/driver_v" />
+
+            <TextView
+                android:id="@+id/tv_positiveHintDialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slt_rect_white"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/com_green"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_w_w"
+    android:background="@drawable/shape_rect_round_white" >
+
+    <LinearLayout
+        style="@style/ll_w_w_v_c"
+        android:layout_width="300dp" >
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_marginTop="10dp"
+            android:text="优惠券金额" />
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            style="@style/ll_w_w_h"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                style="@style/text_12_black_1"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/tv_numCashUserCoupon"
+                style="@style/text_16_black_1"
+                android:text="10"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_12_black_2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="提交信息后，我们将尽快通过电话方式联系您。待核实后，我们将通过支付宝的方式支付。"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_sureCashUserCoupon"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/slt_btn_rect_green"
+            android:text="确认提现"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</FrameLayout>

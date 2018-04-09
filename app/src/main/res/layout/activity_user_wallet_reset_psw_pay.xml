@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_rect_round_white_line_gray"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_psd_pay_phone" />
+
+        <EditText
+            android:id="@+id/etPhoneNum"
+            style="@style/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:hint="输入手机号码" />
+
+        <View
+            style="@style/driver_v"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tv_getCodeResetPsd"
+            style="@style/text_14_green"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="发送验证码" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rect_round_white_line_gray"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_psd_pay_code" />
+
+        <EditText
+            android:id="@+id/etPhoneCode"
+            style="@style/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:hint="输入你收到的验证码" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmitCode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/slt_btn_rect_green"
+        android:text="验证"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

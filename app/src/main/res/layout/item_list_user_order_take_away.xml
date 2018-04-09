@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_w_v"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                style="@style/text_14_black_3"
+                android:text="时间：" />
+
+            <TextView
+                android:id="@+id/tv_timeUserOrderDetailTakeAway"
+                style="@style/text_14_black_1"
+                android:text="2015-10-08" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        style="@style/ll_m_w_h"
+        android:layout_height="104dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_picUserOrderDetailTakeAway"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_food_pic" />
+
+        <LinearLayout
+            style="@style/ll_m_w_v"
+            android:layout_marginLeft="10dp" >
+
+            <LinearLayout style="@style/ll_w_w_h" >
+
+                <TextView
+                    android:id="@+id/tv_nameStoreUserOrderDetailTakeAway"
+                    style="@style/text_14_black_1"
+                    android:text="第一餐厅" />
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:text=" - " />
+
+                <TextView
+                    android:id="@+id/tv_nameGoodUserOrderDetailTakeAway"
+                    style="@style/text_14_black_1"
+                    android:text="海鲜全套餐" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rect_takerInforUserOrderTakeAway"
+                style="@style/base_m_w"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rect_round_gray" >
+
+                <LinearLayout
+                    style="@style/ll_m_w_h_c"
+                    android:padding="4dp" >
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:text="收餐人" />
+
+                    <View
+                        style="@style/driver_v"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp" />
+
+                    <com.tajiang.leifeng.view.CircleImageView
+                        android:id="@+id/iv_iconTakerUserOrderDetailTakeAway"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_nameTakerUserOrderDetailTakeAway"
+                        style="@style/text_12_black_3"
+                        android:layout_marginLeft="5dp"
+                        android:text="快乐的土豆" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_callTakerUserOrderDetailTakeAway"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/icon_user_order_call" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/ll_w_w_h" >
+
+                <TextView
+                    style="@style/text_14_black_2"
+                    android:layout_marginTop="10dp"
+                    android:text="￥" />
+
+                <TextView
+                    android:id="@+id/tv_priceUserOrderDetailTakeAway"
+                    style="@style/text_14_black_1"
+                    android:layout_marginTop="10dp"
+                    android:text="12.6" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.tajiang.leifeng.view.EvaluateView
+            android:id="@+id/ev_userOrderTakeAwayGoodDetail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

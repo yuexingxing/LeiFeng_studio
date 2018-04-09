@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        style="@style/ll_m_w_h_c"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rect_round_white_line_gray"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_marginLeft="10dp"
+            android:text="金额（元）:" />
+
+        <EditText
+            style="@style/com_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:hint="输入充值金额"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gcPayActivity"
+        style="@style/base_m_w"
+        android:listSelector="@color/transparent"
+        android:numColumns="2" />
+
+    <Button
+        android:id="@+id/btn_sureAddWallet"
+        style="@style/btn_green"
+        android:layout_marginTop="10dp"
+        android:text="确定"/>
+
+</LinearLayout>

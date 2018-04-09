@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <FrameLayout
+                    android:id="@+id/flStateRectOrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/com_green"
+                    android:padding="6dp">
+
+                    <LinearLayout
+                        style="@style/ll_m_w_v"
+                        android:background="@drawable/shape_rect_round_white">
+
+                        <LinearLayout
+                            style="@style/ll_m_w_h_c"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivStateOrderDetail"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:src="@drawable/icon_order_unpay" />
+
+                            <RelativeLayout style="@style/base_m_w">
+
+                                <LinearLayout
+                                    style="@style/ll_w_w_v"
+                                    android:layout_marginLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tvStateOrderDetail"
+                                        style="@style/text_14_green"
+                                        android:text="等待支付" />
+
+                                </LinearLayout>
+
+                                <com.tajiang.leifeng.view.TimingButton
+                                    android:id="@+id/btnTimeRemainingOrderPay"
+                                    style="@style/text_14_white"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/icon_order_invalid_time"
+                                    android:gravity="center" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            style="@style/base_m_w"
+                            android:background="#eeeeee">
+
+                            <LinearLayout
+                                android:id="@+id/rectOtherOrderState"
+                                style="@style/ll_m_w_h_c"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout style="@style/ll_w_w_v_c">
+
+                                    <ImageView
+                                        android:id="@+id/ivWaitPayOrderStateOtherOrder"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/icon_wait_pay_gray" />
+
+                                    <TextView
+                                        android:id="@+id/tvWaitPayOrderStateOtherOrder"
+                                        style="@style/text_12_black_1"
+                                        android:layout_marginTop="3dp"
+                                        android:text="等待支付"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/ll_w_w_v"
+                                    android:layout_width="180dp"
+                                    android:layout_gravity="top"
+                                    android:layout_marginTop="8dp">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#d3d3d3" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#fbfbfb" />
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/ll_w_w_v_c">
+
+                                    <ImageView
+                                        android:id="@+id/ivWaitGetOrderStateOtherOrder"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/icon_wait_get" />
+
+                                    <TextView
+                                        android:id="@+id/tvWaitGetOrderStateOtherOrder"
+                                        style="@style/text_12_black_3"
+                                        android:layout_marginTop="3dp"
+                                        android:text="等待取餐"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rectPassMeOrderState"
+                                style="@style/ll_m_w_h_c"
+                                android:gravity="center"
+                                android:paddingBottom="6dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="6dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+
+                                    style="@style/ll_w_w_v_c">
+
+                                    <ImageView
+                                        android:id="@+id/ivWaitPayOrderStatePassMe"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/icon_wait_pay_gray" />
+
+                                    <TextView
+                                        android:id="@+id/tvWaitPayOrderStatePassMe"
+                                        style="@style/text_12_black_1"
+                                        android:layout_marginTop="3dp"
+                                        android:text="等待支付"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/ll_w_w_v"
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="top"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#d3d3d3" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#fbfbfb" />
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/ll_w_w_v_c">
+
+                                    <ImageView
+                                        android:id="@+id/ivWaitPassOrderStatePassMe"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/icon_wait_pai_color" />
+
+                                    <TextView
+                                        android:id="@+id/tvWaitPassOrderStatePassMe"
+                                        style="@style/text_12_black_3"
+                                        android:layout_marginTop="3dp"
+                                        android:text="等待送达"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/ll_w_w_v"
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="top"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#d3d3d3" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1px"
+                                        android:background="#fbfbfb" />
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/ll_w_w_v_c">
+
+                                    <ImageView
+                                        android:id="@+id/ivCompleteOrderStatePassMe"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/icon_wait_get_gray" />
+
+                                    <TextView
+                                        android:id="@+id/tvCompleteOrderStatePassMe"
+                                        style="@style/text_12_black_3"
+                                        android:layout_marginTop="3dp"
+                                        android:text="订单完成"
+                                        android:textSize="10sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/ll_m_m_v_c"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/white">
+
+                    <com.tajiang.leifeng.view.PullListView
+                        android:id="@+id/lv_goodOrderMessDetail"
+                        style="@style/base_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:footerDividersEnabled="true"
+                        android:headerDividersEnabled="true" />
+
+                    <View style="@style/driver_h" />
+
+                    <RelativeLayout
+                        android:id="@+id/rect_addMarkerFoodPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/slt_rect_white">
+
+                        <LinearLayout
+                            style="@style/ll_w_w_h"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/icon_food_pay_marker" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:background="#b4b4b4" />
+
+                            <LinearLayout
+                                style="@style/ll_m_w_v"
+                                android:layout_marginLeft="12dp">
+
+                                <TextView
+                                    style="@style/text_12_black_2"
+                                    android:text="备注" />
+
+                                <TextView
+                                    android:id="@+id/tv_markerOrderDetail"
+                                    style="@style/text_12_black_1"
+                                    android:layout_marginTop="4dp"
+                                    android:ellipsize="end"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/driver_h"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/base_m_w"
+                        android:background="@color/white"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/common_padding"
+                            android:layout_centerVertical="true"
+                            style="@style/text_12_black_2"
+                            android:text="下单时间" />
+
+                        <LinearLayout
+                            android:layout_marginRight="@dimen/common_padding"
+                            android:layout_centerVertical="true"
+                            style="@style/ll_w_w_h"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/tvCreateTimeOrderDetail"
+                                style="@style/text_12_black_3"
+                                android:text="2015-11-26" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View style="@style/driver_h" />
+
+                    <RelativeLayout
+                        android:id="@+id/rectEstimatedTimevOrderDetail"
+                        style="@style/base_m_w"
+                        android:background="@color/white"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/common_padding"
+                            android:layout_centerVertical="true"
+                            style="@style/text_12_black_2"
+                            android:text="送达时间" />
+
+                        <LinearLayout
+                            android:layout_marginRight="@dimen/common_padding"
+                            android:layout_centerVertical="true"
+                            style="@style/ll_w_w_h"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/tvEstimatedTimevOrderDetail"
+                                style="@style/text_12_black_3"
+                                android:text="2015-11-26" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View style="@style/driver_h" />
+
+                    <RelativeLayout
+                        android:id="@+id/rectTimeCannelOrderDetail"
+                        style="@style/base_m_w"
+                        android:background="@color/white"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/common_padding"
+                            android:layout_centerVertical="true"
+                            style="@style/text_12_black_2"
+
+                            android:text="退单时间" />
+
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            style="@style/ll_w_w_h"
+                            android:layout_marginRight="@dimen/common_padding"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/tvTimeCannelOrderDetail"
+                                style="@style/text_12_black_3"
+                                android:text="2015-11-26" />
+
+                        </LinearLayout>
+
+                        <View style="@style/driver_h"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+
+
+
+                    <LinearLayout style="@style/ll_m_w_v">
+
+                        <RelativeLayout
+                            android:id="@+id/rect_FeeOrderMessDetail"
+                            style="@style/base_m_w"
+                            android:background="@color/white"
+                            android:padding="@dimen/common_padding">
+
+                            <LinearLayout style="@style/ll_w_w_v">
+
+                                <TextView
+                                    style="@style/text_12_green"
+                                    android:text="配送费" />
+
+                                <TextView
+                                    style="@style/text_10_black_3"
+                                    android:layout_marginTop="3dp"
+                                    android:text="本订单由[雷锋送餐小分队配送，在用餐高峰期使用配餐服务将收配送费]"
+                                    android:textSize="9sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                style="@style/ll_w_w_h"
+                                android:layout_alignParentRight="true">
+
+                                <TextView
+                                    style="@style/text_12_green"
+                                    android:text="￥" />
+
+                                <TextView
+                                    android:id="@+id/tvSumFeeOrderDetail"
+                                    style="@style/text_12_green"
+                                    android:text="2" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <View style="@style/driver_h" />
+
+                        <RelativeLayout
+                            android:id="@+id/rect_couponOrderMessDetail"
+                            style="@style/base_m_w"
+                            android:background="@color/white"
+                            android:padding="@dimen/common_padding">
+
+                            <TextView
+                                style="@style/text_12_green"
+                                android:text="优惠券" />
+
+                            <LinearLayout
+                                style="@style/ll_w_w_h"
+                                android:layout_alignParentRight="true">
+
+                                <TextView
+                                    style="@style/text_12_green"
+                                    android:text="￥" />
+
+                                <TextView
+                                    android:id="@+id/tvSumCouponOrderDetail"
+                                    style="@style/text_12_green"
+                                    android:text="2" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <View style="@style/driver_h" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rectTipFoodPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/slt_rect_white"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/ll_w_w_h"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_info" />
+
+                        <TextView
+                            style="@style/text_12_black_3"
+                            android:layout_marginLeft="3dp"
+                            android:text="取消订单后，系统将自动退回已使用的优惠券" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/driver_h"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/iv_serviceOrderDetail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_service" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rectSureGetOrderDetail"
+            style="@style/ll_m_w_v"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <View style="@style/driver_h" />
+
+            <LinearLayout
+                style="@style/ll_m_m_h"
+                android:layout_height="40dp"
+                android:background="#eee"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_sure_order_detail" />
+
+                <TextView
+                    style="@style/text_14_green"
+                    android:layout_marginLeft="8dp"
+                    android:text="确认收餐" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rectBuyCarOrderDetail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_food_pay_bar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_buycar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_buycar" />
+
+                    <com.tajiang.leifeng.view.BadgeView
+                        android:id="@+id/tv_numFoodPay"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="right|top" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/ll_w_w_v"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout style="@style/ll_w_w_h">
+
+                        <TextView
+                            style="@style/text_14_black_2"
+                            android:layout_marginLeft="10dp"
+                            android:text="总价：" />
+
+                        <TextView
+                            style="@style/text_14_black_1"
+                            android:text="￥" />
+
+                        <TextView
+                            android:id="@+id/tv_sumPriceFoodPay"
+                            style="@style/text_14_black_1"
+                            android:text="0" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rect_shoppingFeeFoodPay"
+                        style="@style/ll_w_w_h"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/text_10_green"
+                            android:layout_marginLeft="10dp"
+                            android:text="配送费：" />
+
+                        <TextView
+                            style="@style/text_10_green"
+                            android:text="￥" />
+
+                        <TextView
+                            android:id="@+id/tv_serviceFeeFoodPay"
+                            style="@style/text_10_green"
+                            android:text="5.00" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.tajiang.leifeng.view.ClickButton
+                android:id="@+id/btn_payOrder"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="去结算"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_margin_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 活动，赠送，优惠等。。。 -->
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/common_margin_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_action"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_user_invite"/>
+            <TextView
+                android:id="@+id/tv_action"
+                style="@style/text_12_black_1"
+                android:textColor="@color/white"
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="满减活动"/>
+        </LinearLayout>
+</LinearLayout>

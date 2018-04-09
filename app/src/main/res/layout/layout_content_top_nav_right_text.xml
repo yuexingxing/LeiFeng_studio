@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/com_nav_bg_slt_left_right"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_navRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_nav_text_right" />
+    </FrameLayout>
+
+</FrameLayout>

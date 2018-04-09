@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/content_school_store_name"
+                style="@style/text_12_black_1"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="content" />
+
+            <ImageView
+                android:id="@+id/iv_hook"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/common_margin_30"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_hook_green"/>
+
+        </RelativeLayout>
+
+        <View style="@style/driver_h"/>
+
+    </LinearLayout>
+
+    <View style="@style/driver_v"></View>
+
+</LinearLayout>

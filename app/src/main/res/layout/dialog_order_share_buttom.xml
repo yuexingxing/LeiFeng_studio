@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_food_share_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:layout_centerInParent="true"
+                    android:text="分享得红包" />
+
+                <TextView
+                    android:id="@+id/tv_canelShare"
+                    style="@style/text_12_black_2"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="取消" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/ll_m_w_h"
+                android:layout_marginTop="5dp">
+
+                <!--  <View
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1" />
+
+                  <LinearLayout
+                      android:id="@+id/rect_qqShare"
+                      style="@style/ll_w_w_v_c">
+
+                      <ImageView
+                          android:layout_width="40dp"
+                          android:layout_height="40dp"
+                          android:src="@drawable/icon_share_qq" />
+
+                      <TextView
+                          style="@style/text_12_black_2"
+                          android:layout_marginTop="3dp"
+                          android:text="QQ空间"
+                          android:textSize="10sp" />
+
+                  </LinearLayout>-->
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/rect_weChatShare"
+                    style="@style/ll_w_w_v_c">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/icon_share_wechat" />
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:layout_marginTop="3dp"
+                        android:text="微信好友"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/rect_circleShare"
+                    style="@style/ll_w_w_v_c">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/icon_share_cricle" />
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:layout_marginTop="3dp"
+                        android:text="朋友圈"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
+
+
+

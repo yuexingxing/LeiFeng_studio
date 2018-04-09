@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray" >
+
+    <include layout="@layout/include_order_empty" />
+
+    <com.tajiang.leifeng.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/plv_takeawayOrder"
+        style="@style/base_m_m"
+        android:layout_marginTop="2dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp" />
+
+</FrameLayout>

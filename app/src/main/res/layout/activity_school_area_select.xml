@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/com_root_layout_ll_gray">
+
+    <LinearLayout style="@style/com_root_layout_ll_gray">
+
+        <include layout="@layout/layout_school_search"/>
+
+        <LinearLayout
+            style="@style/ll_m_w_v"
+            android:layout_height="120dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                style="@style/ll_m_w_h_c"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_local_green"/>
+
+                <TextView
+                    style="@style/text_14_black_5"
+                    android:layout_marginLeft="8dp"
+                    android:text="附近的学校"/>
+
+            </LinearLayout>
+
+            <RelativeLayout style="@style/base_m_m">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:id="@+id/ivChangeIP"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_img_school_select"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp">
+
+                        <LinearLayout
+                            style="@style/ll_w_w_v_c"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="left">
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tvOneSchool"
+                                style="@style/text_14_black_1"
+                                android:text="杭州理工大学"/>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tvTwoSchool"
+                                style="@style/text_14_black_1"
+                                android:layout_marginTop="6dp"
+                                android:text="杭州理学"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/viewWaitLocal"
+                            style="@style/text_14_black_3"
+                            android:layout_marginTop="30dp"
+                            android:padding="5dp"
+                            android:text="定位中..."
+                            android:visibility="visible"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/driver_h"/>
+
+        <LinearLayout
+            style="@style/ll_m_m_v"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                style="@style/ll_m_w_h_c"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_school"/>
+
+                <TextView
+                    style="@style/text_14_black_5"
+                    android:layout_marginLeft="8dp"
+                    android:text="选择学校"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvSchoolListLocal"
+                style="@style/base_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSchoolSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="42dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"/>
+
+
+</FrameLayout>
+
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_nav_bg_root">
+
+        <FrameLayout
+            android:id="@+id/fl_imgNavLeft"
+            android:layout_width="@dimen/common_nav_left_right_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/com_nav_bg_slt_left_right"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/common_nav_right_icon_size"
+                android:layout_height="@dimen/common_nav_right_icon_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_nav_left_back" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/text_16_white"
+            android:layout_centerInParent="true"
+            android:text="抢单"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_switchApartmentOrderRob"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:background="@drawable/shape_rect_round_gray_2"
+                android:text="所有的宿舍楼"
+                android:textColor="@color/text_black_1"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="0dp" />
+
+            <com.tajiang.leifeng.view.SwitchSexButton
+                android:id="@+id/sbtn_switchSex"
+                android:layout_width="100dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentRight="true">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="#979392" />
+
+                <LinearLayout style="@style/ll_w_w_h">
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:layout_marginLeft="5dp"
+                        android:text="完成每单随机获得"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_numOrderRob"
+                        style="@style/text_12_green"
+                        android:layout_marginLeft="5dp"
+                        android:text="0"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:layout_marginLeft="5dp"
+                        android:text="元优惠券"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/driver_h" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rect_emptyOrderRap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icon_order_empty" />
+
+            <TextView
+                style="@style/text_12_black_3"
+                android:layout_marginTop="12dp"
+                android:text="抢单池为空，点击刷新" />
+        </LinearLayout>
+
+        <com.tajiang.leifeng.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/plv_orderRob"
+            style="@style/base_m_m" />
+    </FrameLayout>
+
+</LinearLayout>

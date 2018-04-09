@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_margin_3"
+    android:paddingLeft="@dimen/common_margin_8">
+
+    <LinearLayout
+        style="@style/base_m_w"
+        android:paddingBottom="@dimen/common_margin_3">
+
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/common_margin_5">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_picFoodSelect"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:scaleType="centerCrop"
+                fresco:placeholderImage="@drawable/icon_empty_good"
+                fresco:roundedCornerRadius="3dp"
+                fresco:roundingBorderWidth="1px" />
+            <!--fresco:placeholderImage="@drawable/icon_empty_good"-->
+            <!--fresco:roundingBorderColor="@color/com_driver"-->
+            <ImageView
+                android:id="@+id/iv_pic_special_price"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="@dimen/common_margin_5"
+                android:layout_marginTop="@dimen/common_margin_3"
+                android:src="@drawable/icon_special_price" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_10"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_margin_8">
+
+            <LinearLayout
+                android:id="@+id/ll_nameFoodSelect"
+                style="@style/ll_m_w_h">
+
+
+                <TextView
+                    android:id="@+id/tv_nameFoodSelect"
+                    style="@style/text_14_black_5"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:text="黄焖鸡米饭套餐" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_add_food"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ll_nameFoodSelect">
+
+                <TextView
+                    android:id="@+id/tv_month_sellqty"
+                    style="@style/text_12_black_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_tag_special_price"
+                    style="@style/text_12_black_5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin_right_40"
+                    android:text="每单限1份特价"
+                    android:visibility="gone" />
+
+                <com.tajiang.leifeng.view.NumControlView
+                    android:id="@+id/ncv_numFoodSelect"
+                    android:layout_width="100dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_add_food"
+                android:gravity="center|right"
+                android:paddingBottom="@dimen/common_margin_5">
+
+
+                <TextView
+                    android:id="@+id/tv_out_of_detail"
+                    style="@style/text_12_black_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/shape_rect_gray_round_corner"
+                    android:paddingLeft="@dimen/common_margin_5"
+                    android:paddingRight="@dimen/common_margin_5"
+                    android:text="已售完"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_"
+                style="@style/ll_w_w_h"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp">
+
+                <TextView
+                    style="@style/text_14_green"
+                    android:text="￥"
+                    android:textColor="@color/red_money" />
+
+                <TextView
+                    android:id="@+id/tv_priceFoodSelect"
+                    style="@style/text_14_green"
+                    android:text="13.5"
+                    android:textColor="@color/red_money" />
+
+                <TextView
+                    android:id="@+id/tvPriceFoodAction"
+                    style="@style/text_16_black_3"
+                    android:layout_marginLeft="6dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.tajiang.leifeng.view.HExpandableTextView
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseDrawable="@drawable/icon_expand_tv_up"
+        expandableTextView:expandDrawable="@drawable/icon_expand_tv_down"
+        expandableTextView:maxCollapsedLines="1">
+
+        <TextView
+            android:id="@+id/expandable_text"
+            style="@style/text_12_black_1"
+            android:layout_width="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/expand_collapse"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </com.tajiang.leifeng.view.HExpandableTextView>
+
+</LinearLayout>

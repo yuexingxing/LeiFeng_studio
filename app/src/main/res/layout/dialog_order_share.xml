@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:src="@drawable/img_order_share" />
+
+    <LinearLayout
+        style="@style/ll_w_w_h"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp">
+
+        <Button
+            android:id="@+id/btn_cannelShareDialog"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_btn_round_gray"
+            android:text="给钱也不要"
+            android:textColor="@color/text_black_2"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sureShareDialog"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_btn_round_white"
+            android:text="我要红包"
+            android:textColor="@color/com_green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/base_m_m"
+            android:background="@color/white">
+
+    <LinearLayout
+        style="@style/com_root_layout_ll_white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="50dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            style="@style/base_w_w"
+            android:text="呼朋结伴 共享惊喜"
+            android:textColor="#ea6942"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDescInvite"
+            style="@style/text_14_black_1"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text=""
+            android:textColor="#4a4a4a"/>
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_user_invite"/>
+
+        <RelativeLayout
+            style="@style/base_w_m"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:text="已邀请："/>
+
+
+            <TextView
+                android:id="@+id/tvNumPersomInvite"
+                style="@style/text_14_green"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/base_w_w"
+            android:layout_width="160dp">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_centerVertical="true"
+                android:text="你的邀请码："/>
+
+
+            <TextView
+                android:id="@+id/tvCodeInviteInvite"
+                style="@style/text_14_green"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnInviteUser"
+            android:layout_width="170dp"
+            android:layout_marginTop="16dp"
+            android:text="马上邀请"
+            style="@style/btn_green"/>
+
+    </LinearLayout>
+</ScrollView>
+

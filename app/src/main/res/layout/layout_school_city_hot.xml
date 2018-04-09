@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/com_root_layout_ll_gray">
+
+    <TextView
+        android:padding="@dimen/common_padding"
+        style="@style/text_14_black_1"
+        android:layout_gravity="left"
+        android:text="热门城市"/>
+
+    <com.tajiang.leifeng.view.PullGridView
+        android:id="@+id/gvCityHotSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="3"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:verticalSpacing="20dp"/>
+
+</LinearLayout>

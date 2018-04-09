@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rectItemContentPassMe"
+    style="@style/base_m_m">
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/slt_rect_white">
+
+        <LinearLayout
+            style="@style/ll_m_w_h"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/tv_picOrder"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                fresco:failureImage="@drawable/icon_empty_good"
+                fresco:roundedCornerRadius="3dp"
+                android:layout_marginLeft="5dp"
+                fresco:roundingBorderColor="@color/com_driver"
+                fresco:roundingBorderWidth="1px" />
+            <!--fresco:placeholderImage="@drawable/icon_empty_good"-->
+
+
+            <LinearLayout
+                style="@style/ll_m_w_v"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvNameStoreOrder"
+                        style="@style/text_14_black_5"
+                        android:layout_centerVertical="true"
+                        android:text="第一餐厅" />
+
+                    <TextView
+                        android:id="@+id/tvStateOrder"
+                        style="@style/text_14_green"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="已接单" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvTimeOrder"
+                    style="@style/text_12_black_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:text="4-30 12:40" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPackageNum"
+                        style="@style/text_12_black_3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="套餐数量x2" />
+
+
+                    <TextView
+                        android:id="@+id/tvPriceOrder"
+                        style="@style/text_14_black_1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="￥10"
+                        android:textColor="@color/red_money" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding" />
+
+        <RelativeLayout
+            style="@style/base_m_w"
+            android:layout_height="45dp"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hurry_order_btn"
+                    style="@style/text_12_green"
+                    android:layout_width="96dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_rect_round_line_green"
+                    android:gravity="center"
+                    android:text="催TA一下" />
+
+                <com.tajiang.leifeng.view.OrderStateBtnView
+                    android:id="@+id/tvOperateOrder"
+                    style="@style/text_12_green"
+                    android:layout_width="96dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_rect_round_line_green"
+                    android:gravity="center"
+                    android:text="联系送餐人"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View style="@style/driver_h" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

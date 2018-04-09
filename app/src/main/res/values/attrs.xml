@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SwingLableBarWeight">
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progress" format="float" />
+        <attr name="cpv_maxProgress" format="float" />
+        <attr name="cpv_animDuration" format="integer" />
+        <attr name="cpv_animSwoopDuration" format="integer" />
+        <attr name="cpv_animSyncDuration" format="integer" />
+        <attr name="cpv_color" format="color" />
+        <attr name="cpv_thickness" format="dimension" />
+        <attr name="cpv_indeterminate" format="boolean" />
+        <attr name="cpv_animAutostart" format="boolean" />
+        <attr name="cpv_animSteps" format="integer" />
+        <attr name="cpv_startAngle" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowlayoutTags">
+
+        <attr name="tag_backgroundColor" format="reference|color" />
+        <attr name="tag_checkedBackgroundColor" format="reference|color" />
+        <attr name="tag_pressedBackgroundColor" format="reference|color" />
+
+        <attr name="tag_inputHintColor" format="color" />
+        <attr name="tag_inputTextColor" format="color" />
+
+        <attr name="tag_horizontalSpacing" format="dimension" />
+        <attr name="tag_verticalSpacing" format="dimension" />
+        <attr name="tag_horizontalPadding" format="dimension" />
+        <attr name="tag_verticalPadding" format="dimension" />
+
+        <attr name="tag_textColor" format="color" />
+        <attr name="tag_checkedTextColor" format="reference|color" />
+        <attr name="tag_textSize" format="dimension" />
+
+        <!-- 边框圆角半径-->
+        <attr name="tag_radius" format="dimension" />
+        <attr name="tag_bottomLeftRadius" format="dimension" />
+        <attr name="tag_bottomRightRadius" format="dimension" />
+        <attr name="tag_topLeftRadius" format="dimension" />
+        <attr name="tag_topRightRadius" format="dimension" />
+        <!-- 边框颜色-->
+        <attr name="tag_strokeColor" format="reference|color" />
+        <attr name="tag_checkedStrokeColor" format="reference|color" />
+        <!-- 边框宽度-->
+        <attr name="tag_strokeWidth" format="dimension" />
+        <!-- 是否多选-->
+        <attr name="tag_multiChooseable" format="boolean" />
+        <attr name="tag_singleLine" format="boolean" />
+
+        <!--单位dp,为了适应wrap_content用integer-->
+        <attr name="tag_width" format="integer|enum">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="tag_height" format="integer|enum">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="tag_maxEms" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="flowlayoutTagsStyle" format="reference" />
+    </declare-styleable>
+
+    <!--圆角进度条-->
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgress">
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconWidth" format="dimension" />
+        <attr name="rcIconHeight" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcIconPaddingLeft" format="dimension" />
+        <attr name="rcIconPaddingRight" format="dimension" />
+        <attr name="rcIconPaddingTop" format="dimension" />
+        <attr name="rcIconPaddingBottom" format="dimension" />
+        <attr name="rcIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgress">
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressMargin" format="dimension" />
+        <attr name="rcTextProgress" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TJExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference"></attr>
+        <attr name="collapseDrawable" format="reference"></attr>
+
+        <!--<attr name="TJExpandTextViewId" format="reference"></attr>-->
+        <!--<attr name="TJExpandButtonId" format="reference"></attr>-->
+    </declare-styleable>
+
+    <declare-styleable name="TJMarqueeTextView">
+        <attr name="marqueeEnabled" format="boolean" />
+        <attr name="edgeEffectEnabled" format="boolean" />
+        <attr name="edgeEffectWidth" format="integer" />
+        <attr name="edgeEffectColor" format="color" />
+        <attr name="pauseDuration" format="integer" />
+        <attr name="forceMarquee" format="boolean" />
+        <attr name="centerText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+</resources>

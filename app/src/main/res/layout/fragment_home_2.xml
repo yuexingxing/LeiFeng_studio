@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_title_bg_root" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_nav_root_height"
+        android:background="@color/common_title_bg_root"
+        android:gravity="center"
+        android:paddingLeft="@dimen/common_margin_10"
+        android:paddingRight="@dimen/common_margin_10">
+
+        <LinearLayout
+            android:id="@+id/rect_change_school"
+            style="@style/ll_w_w_h"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_rect_circle_black_alpha"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <!--<ImageView-->
+            <!--android:layout_width="13dp"-->
+            <!--android:layout_height="13dp"-->
+            <!--android:src="@drawable/icon_local_white"/>-->
+
+            <TextView
+                android:id="@+id/tv_nameStoreSelectFood"
+                style="@style/text_14_white"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:drawableLeft="@drawable/icon_local_white"
+                android:drawableRight="@drawable/icon_select_white"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="全民雷锋" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/ivSelectStoreFoodSelect"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/icon_select_white"/>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipe_to_load_layout"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+
+        android:layout_height="match_parent">
+
+        <com.tajiang.leifeng.view.pullrefresh.RefreshHeadView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/com_layout_bg"
+            android:gravity="center"
+            android:textColor="@color/text_loading_gray"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.tajiang.leifeng.view.pullrefresh.LayoutFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/com_layout_bg"
+            android:gravity="center" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/fl_banner_root"-->
+    <!--android:layout_weight="8"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<com.bigkoo.convenientbanner.ConvenientBanner-->
+    <!--android:id="@+id/banner_home"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:canLoop="true"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_weight="7"-->
+    <!--android:gravity="center|left"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--style="@style/text_14_black_1"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:drawableLeft="@drawable/icon_store_home"-->
+    <!--android:drawablePadding="8dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#101010"-->
+    <!--android:text="商家档口"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/fl_store_root"-->
+    <!--android:layout_weight="7"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_store"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

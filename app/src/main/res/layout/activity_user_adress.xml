@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/com_root_layout_ll_gray">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <include layout="@layout/include_address_empty"/>
+
+        <com.tajiang.leifeng.view.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_adressUser"
+            style="@style/base_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="12dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/view_addUserAdress"
+            style="@style/base_m_w"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/common_title_bg_root">
+
+            <TextView
+                style="@style/text_14_black_5"
+                android:layout_centerInParent="true"
+                android:text="添加地址"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

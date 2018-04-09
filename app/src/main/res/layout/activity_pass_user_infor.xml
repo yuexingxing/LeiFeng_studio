@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m" >
+
+    <LinearLayout style="@style/com_root_layout_ll_white" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/black" >
+
+            <ImageView
+                android:id="@+id/iv_picCardUserVerify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:id="@+id/rect_retakePhoto"
+                style="@style/ll_w_w_h"
+                android:layout_gravity="bottom|right"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_retake_photo" />
+
+                <TextView
+                    style="@style/text_12_white"
+                    android:text="重拍" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rect_takePhoneUserVerify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#656565" >
+
+                <ImageView
+                    android:id="@+id/iv_takePhotoUserVerify"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/icon_order_rap_take_photo" />
+
+                <TextView
+                    style="@style/text_14_white"
+                    android:layout_below="@id/iv_takePhotoUserVerify"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="点击拍照" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#222222"
+                    android:gravity="center"
+                    android:text="请点击拍照按钮，上传本人 身份证 或 学生证"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="50dp"
+            android:paddingLeft="16sp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_user" />
+
+            <EditText
+                android:id="@+id/et_nameUserApprove"
+                style="@style/base_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:hint="真实姓名" />
+        </LinearLayout>
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="50dp"
+            android:paddingLeft="16sp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_sex" />
+
+            <TextView
+                android:id="@+id/et_sexUserApprove"
+                style="@style/base_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:hint="性别" />
+        </LinearLayout>
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="50dp"
+            android:paddingLeft="16sp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_phone" />
+
+            <EditText
+                android:id="@+id/et_phoneUserApprove"
+                style="@style/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:hint="手机号"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="50dp"
+            android:paddingLeft="16sp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_local" />
+
+            <TextView
+                android:id="@+id/et_apartmentUserApprove"
+                style="@style/base_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:hint="宿舍楼" />
+        </LinearLayout>
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="50dp"
+            android:paddingLeft="16sp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_apartment" />
+
+            <EditText
+                android:id="@+id/et_roomUserApprove"
+                style="@style/base_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:hint="宿舍号" />
+        </LinearLayout>
+
+        <View style="@style/driver_h" />
+
+        <Button
+            android:id="@+id/btn_submitUserApprove"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/slt_btn_rect_green"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

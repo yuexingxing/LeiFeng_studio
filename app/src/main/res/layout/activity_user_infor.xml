@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              style="@style/com_root_layout_ll_white">
+
+    <RelativeLayout
+        android:id="@+id/view_iconChangeUserInfor"
+        style="@style/base_m_w"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="头像" />
+
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_iconUserInfor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                fresco:roundAsCircle="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_enter_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_usernameChangeUserInfor"
+        style="@style/base_m_w"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="用户名" />
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_nameUserInfor"
+                style="@style/text_14_black_3"
+                android:layout_marginRight="8dp"
+                android:text="快乐的土豆" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_enter_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_sexChangeUserInfor"
+        style="@style/base_m_w"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="性别" />
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_sexUserInfor"
+                style="@style/text_14_black_3"
+                android:layout_marginRight="8dp"
+                android:text="女" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_enter_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_pswChangeUserInfor"
+        style="@style/base_m_w"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="修改当前密码" />
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_enter_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+</LinearLayout>

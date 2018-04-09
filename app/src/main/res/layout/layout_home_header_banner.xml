@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/com_root_layout_ll_white">
+
+    <FrameLayout
+        style="@style/base_m_w"
+        android:layout_height="280dp">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/bannerHome"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true"/>
+
+        <LinearLayout
+            style="@style/ll_m_w_v"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_home_banner_bg_img"/>
+
+            <LinearLayout
+                style="@style/base_m_w"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/rectFoodHome"
+                    style="@style/ll_w_w_v_c"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_home_food_background">
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_home_food"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_12_black_2"
+                        android:text="阳光食堂"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/driver_v">
+
+                </View>
+
+
+                <!-- 礼品 -->
+
+                <!---->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/rectGifHome"-->
+                    <!--style="@style/ll_w_w_v_c"-->
+                    <!--android:layout_centerInParent="true">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:src="@drawable/icon_home_gif"/>-->
+
+                    <!--<LinearLayout style="@style/ll_w_w_h_c">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/text_12_black_2"-->
+                            <!--android:text="礼品"/>-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!-- 礼品 -->
+
+
+                <!-- 快递 -->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/rectPassHome"-->
+                    <!--style="@style/ll_w_w_v_c"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:src="@drawable/icon_home_pass"/>-->
+
+                    <!--<LinearLayout style="@style/ll_w_w_h_c">-->
+
+                        <!--<TextView-->
+                            <!--style="@style/text_12_black_2"-->
+                            <!--android:text="快递"/>-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!-- 快递 -->
+
+
+                <LinearLayout
+                    android:id="@+id/rectPassHome"
+                    android:layout_weight="1"
+                    style="@style/ll_w_w_v_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_home_pass"/>
+
+                    <LinearLayout style="@style/ll_w_w_h_c">
+
+                        <TextView
+                            style="@style/text_12_black_2"
+                            android:text="梦想报名"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/com_layout_bg"/>
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fresco="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/slt_layout_rect_gray">
+
+        <LinearLayout style="@style/ll_w_m_h_c"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="5dp">
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/ivIconTypeScreen"-->
+                <!--android:layout_width="23dp"-->
+                <!--android:layout_height="23dp"-->
+                <!--fresco:placeholderImage="@drawable/pic_img_place_holder"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_point"-->
+                <!--android:visibility="invisible"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_width="6dp"-->
+                <!--android:layout_height="6dp"-->
+                <!--android:src="@drawable/icon_circle"/>-->
+
+            <TextView
+                android:id="@+id/tvDecsTypeScreen"
+                style="@style/text_12_black_2"
+                android:gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="热卖"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_count_food_type"
+            style="@style/ll_w_m_h_c"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvSumTypeScreen"
+                style="@style/text_12_black_2"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_rect_circle_gray"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="120"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_enter"/>
+
+        </LinearLayout>
+
+        <View style="@style/driver_v"
+            android:id="@+id/v_driver_v"
+            android:layout_alignParentRight="true" />
+
+        
+        <RelativeLayout
+            android:id="@+id/rl_root_selected"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="4dp">
+            <View
+                style="@style/driver_h"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/selected_color_orange"></View>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:background="@drawable/img_food_type_selected"></View>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

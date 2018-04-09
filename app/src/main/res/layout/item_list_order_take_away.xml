@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rectOrderItemTakerAway"
+    style="@style/base_m_m">
+
+    <LinearLayout
+        android:id="@+id/rectOrderItemHasPayTakerAway"
+        style="@style/ll_m_w_v"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rectOrderTitleTakeAway"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <FrameLayout
+                style="@style/base_w_w"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/rect_selfOrderTakeAway"
+                    style="@style/ll_w_w_h">
+
+                    <TextView
+                        style="@style/text_14_black_3"
+                        android:text="订餐人:" />
+
+                    <TextView
+                        android:id="@+id/tv_personOrderTakeAway"
+                        style="@style/base_w_w"
+                        android:text="自己"
+                        android:textColor="@color/com_green" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rect_adressOrderTakeAway"
+                    style="@style/ll_w_w_h_c">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_local" />
+
+                    <TextView
+                        android:id="@+id/tv_adressOrderTakeAway"
+                        style="@style/base_w_w"
+                        android:text="地址"
+                        android:textColor="@color/com_green" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/text_14_black_3"
+                    android:text="取餐地点:" />
+
+                <TextView
+                    android:id="@+id/tv_messOrderTakeAway"
+                    style="@style/base_w_w"
+                    android:text="第一餐厅"
+                    android:textColor="@color/com_green" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            android:id="@+id/rectOrderInforPay"
+            style="@style/ll_m_w_h"
+            android:layout_height="114dp">
+
+            <ImageView
+                android:id="@+id/iv_codeOrder"
+                android:layout_width="114dp"
+                android:layout_height="114dp"
+                android:background="@drawable/shape_rect_round_gray" />
+
+            <RelativeLayout
+                style="@style/base_m_m"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_nameOrderTakeAway"
+                    style="@style/text_14_black_1"
+                    android:text="海鲜全套餐" />
+
+                <LinearLayout
+                    android:id="@+id/ll_callOrderTakeAway"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/slt_btn_rect_green"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_order_take_away_call" />
+
+                    <TextView
+                        style="@style/base_w_w"
+                        android:layout_marginLeft="5dp"
+                        android:text="联系订餐人"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_enter_gray" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_item_order_no_pay" />
+</FrameLayout>
+
+

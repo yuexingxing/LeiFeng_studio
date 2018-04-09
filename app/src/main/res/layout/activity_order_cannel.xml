@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray">
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="电话申请退单"/>
+
+        <TextView
+            style="@style/text_10_black_3"
+            android:layout_marginTop="10dp"
+            android:text="食堂可能已在配送，如急需退单，可以拨打电话试试"/>
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnMessPhoneOrderCannel"
+            style="@style/btn_green"
+            android:layout_marginTop="16dp"
+            android:text="食堂电话"/>
+
+        <Button
+            android:id="@+id/btnLeiFengPhoneOrderCannel"
+            style="@style/btn_green"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rect_round_line_green"
+            android:text="全民雷锋客服电话"
+            android:textColor="@color/com_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+<!--新版本退款的界面-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:fresco="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/rectItemOrder_cancel"-->
+    <!--style="@style/base_m_m"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ScrollView-->
+        <!--style="@style/base_m_m"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="1">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_cancel"-->
+                <!--style="@style/ll_m_w_v"-->
+                <!--android:background="@drawable/slt_rect_white">-->
+
+                <!--<RelativeLayout-->
+                    <!--style="@style/base_m_w"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:paddingLeft="@dimen/common_padding"-->
+                    <!--android:paddingRight="@dimen/common_padding">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvNameStoreOrder_cancel"-->
+                        <!--style="@style/text_14_black_5"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="第一餐厅" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvStateOrder_cancel"-->
+                        <!--style="@style/text_14_green"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="已接单" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_store_name_cancel"-->
+                    <!--style="@style/text_12_black_1"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="@dimen/common_padding"-->
+                    <!--android:text="第一餐厅" />-->
+
+                <!--<RelativeLayout-->
+                    <!--style="@style/base_m_w"-->
+                    <!--android:layout_height="62dp"-->
+                    <!--android:paddingLeft="@dimen/common_padding"-->
+                    <!--android:paddingRight="@dimen/common_padding">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--style="@style/ll_w_w_h"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                            <!--android:id="@+id/tv_picOrder_cancel"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--fresco:failureImage="@drawable/icon_empty_good"-->
+                            <!--fresco:roundedCornerRadius="3dp"-->
+                            <!--fresco:roundingBorderColor="@color/com_driver"-->
+                            <!--fresco:roundingBorderWidth="1px" />-->
+                        <!--&lt;!&ndash;fresco:placeholderImage="@drawable/icon_empty_good"&ndash;&gt;-->
+
+
+                        <!--<LinearLayout-->
+                            <!--style="@style/ll_w_w_v"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginTop="10dp">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvNameGoodOrder_cancel"-->
+                                <!--style="@style/text_12_black_1"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text="海鲜全套餐" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvTimeOrder_cancel"-->
+                                <!--style="@style/text_12_black_3"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text="4-30 12:40" />-->
+
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvPriceOrder_cancel"-->
+                        <!--style="@style/text_14_black_1"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="￥10"-->
+                        <!--android:textColor="@color/red_money" />-->
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<View style="@style/driver_h" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--style="@style/text_14_black_5"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:paddingLeft="14dp"-->
+                <!--android:paddingRight="14dp"-->
+                <!--android:text="退款金额" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="12.4dp"-->
+                <!--android:layout_marginRight="12.4dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/bg_white"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingBottom="13dp"-->
+                <!--android:paddingLeft="13dp"-->
+                <!--android:paddingTop="13dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_money_cancel"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="22 元"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_canel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="(最多退22元,含配送费1元;退款将退入雷锋钱包)"-->
+                <!--android:textSize="12sp" />-->
+
+            <!--<TextView-->
+                <!--style="@style/text_14_black_5"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:paddingLeft="14dp"-->
+                <!--android:paddingRight="14dp"-->
+                <!--android:text="退款原因" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/choose_reason_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="12.4dp"-->
+                <!--android:layout_marginRight="12.4dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/bg_white"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingBottom="13dp"-->
+                <!--android:paddingLeft="13dp"-->
+                <!--android:paddingTop="13dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_moneycause_cancel"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="请选择退款原因"-->
+                    <!--android:textSize="14sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/cancel_choose_iv"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="10dp"-->
+                    <!--android:layout_gravity="right|center"-->
+                    <!--android:layout_marginRight="13dp"-->
+                    <!--android:background="@drawable/icon_expand_tv_up" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/recycler_cancel_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="14dp"-->
+                <!--android:layout_marginRight="14dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:background="@drawable/bg_white">-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/reason_cancel_recycler"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_marginRight="2dp"-->
+                    <!--android:layout_marginTop="8dp">-->
+
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/introduce_text"-->
+                <!--style="@style/text_14_black_5"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:paddingLeft="14dp"-->
+                <!--android:paddingRight="14dp"-->
+                <!--android:text="退款说明（选填）" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/cancel_edit_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="12.4dp"-->
+                <!--android:layout_marginRight="12.4dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/bg_white">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/cancel_reason_edit"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="13dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="top"-->
+                    <!--android:hint="填写退款具体说明..."-->
+                    <!--android:maxLines="5"-->
+                    <!--android:minLines="5"-->
+                    <!--android:maxLength="100"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/rectOperateOrder"-->
+        <!--style="@style/ll_m_w_h"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:weightSum="7">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNegativeOrderDetail_cancel"-->
+            <!--style="@style/text_14_black_1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:text="取消申请"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvPositiveOrderDetail_cancel"-->
+            <!--style="@style/text_14_white"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@color/red_orange"-->
+            <!--android:gravity="center"-->
+            <!--android:text="提交申请"-->
+            <!--android:textSize="18sp" />-->
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->

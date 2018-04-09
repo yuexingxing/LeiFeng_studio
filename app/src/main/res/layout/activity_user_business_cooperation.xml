@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/com_root_layout_ll_white"
+        android:gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_user_business_cooperation" />
+
+        <TextView
+            style="@style/text_14_black_3"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.1"
+            android:text="
+加入全民雷锋  开启互联网经营时代
+\n我们的优势
+\n智能管理
+\n成本效率尽在掌握
+\n双路运营
+\n线上线下订单不断
+\n多项扶持
+\n政策贴补后顾无忧
+\n合作伙伴
+\n浙江传媒大学
+\n浙江越秀外国语学院
+\n浙江中医药大学
+\n杭州第一技师学院
+\n浙江省杭州第二中学 
+\n加入我们
+\n联系电话：0571-87939660 
+\n地址：杭州市西湖区文一西路588号诚公馆4号楼805室" />
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:layout_marginTop="16dp"
+            android:text="版权信息" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:text="杭州塔酱科技有限公司" />
+    </LinearLayout>
+
+</ScrollView>

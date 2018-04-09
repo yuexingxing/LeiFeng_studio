@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ll_m_w_h_c"
+        android:layout_height="32dp"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/nameGoodOrderDetail"
+            style="@style/text_14_black_1"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="酸菜鱼"/>
+
+        <TextView
+            android:id="@+id/numGoodOrderDetail"
+            style="@style/text_14_black_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="1份"/>
+
+        <TextView
+            android:id="@+id/priceGoodOrderDetail"
+            style="@style/text_14_black_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="￥21"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray"
+    android:descendantFocusability="blocksDescendants">
+
+    <ScrollView
+        style="@style/base_m_w"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_payContentMess"
+            style="@style/ll_m_m_v"
+            android:animateLayoutChanges="true"
+            android:paddingBottom="30dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <FrameLayout
+                android:id="@+id/rect_adressFoodPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    style="@style/base_m_w"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/slt_rect_white"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:paddingRight="@dimen/common_padding"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout style="@style/ll_w_w_h_c">
+
+                        <LinearLayout style="@style/ll_w_w_v">
+
+                            <LinearLayout style="@style/ll_w_w_h">
+
+                                <TextView
+                                    android:id="@+id/tv_userFoodPay"
+                                    style="@style/text_14_black_1"
+                                    android:text="" />
+
+                                <TextView
+                                    android:id="@+id/tv_phoneFoodPay"
+                                    style="@style/text_14_black_1"
+                                    android:text="请先添加一个地址" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_adressFoodPay"
+                                style="@style/text_14_black_1"
+                                android:layout_marginTop="6dp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ll_w_w_h_c"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_enter_gray" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rectFirstEatFoodPay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:layout_centerVertical="true"
+                    android:text="送达时间" />
+
+                <FrameLayout
+                    style="@style/base_w_w"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout style="@style/ll_w_w_h_c">
+
+                        <LinearLayout
+                            android:id="@+id/rectHasPerssiomFoodPay"
+                            style="@style/ll_w_w_h_c">
+
+                            <TextView
+                                android:id="@+id/tvHasPerssiomFoodPay"
+                                style="@style/text_14_green"
+                                android:layout_marginRight="6dp"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="2dp"
+                                android:textColor="#ff5033" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_enter_gray" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:layout_marginRight="@dimen/common_padding" />
+
+            <RelativeLayout
+                android:id="@+id/rect_addMarkerFoodPay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:layout_centerVertical="true"
+                    android:text="备注" />
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_markerOrder"
+                        style="@style/text_12_black_3"
+                        android:layout_width="160dp"
+                        android:layout_marginLeft="12dp"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lines="1"
+                        android:text="添加备注信息" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_enter_gray" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_couponFoodPay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+                <TextView
+                    android:id="@+id/tv_coupon_count"
+                    style="@style/text_14_black_1"
+                    android:layout_centerVertical="true"
+                    android:text="优惠券" />
+
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_priceCouponFoodPay"
+                        style="@style/text_12_black_3"
+                        android:text="暂无优惠券" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_enter_gray" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/ll_m_w_v"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/slt_rect_white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:paddingRight="@dimen/common_padding">
+
+                    <TextView
+                        android:id="@+id/tvNameSchoolFoodPay"
+                        style="@style/text_14_black_1"
+                        android:layout_centerVertical="true"
+                        android:text="学校名称" />
+
+                    <View
+                        style="@style/driver_h"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <com.tajiang.leifeng.view.PullListView
+                    android:id="@+id/plv_orderDetailFoodPay"
+                    style="@style/base_m_w"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" />
+
+                <View
+                    style="@style/driver_h"
+                    android:layout_marginLeft="@dimen/common_padding"
+                    android:layout_marginRight="@dimen/common_padding" />
+
+                <LinearLayout
+                    style="@style/ll_w_w_v"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/common_padding">
+
+                    <RelativeLayout
+                        android:id="@+id/rect_BoxFeeFoodPay"
+                        style="@style/base_m_w"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:layout_marginTop="@dimen/common_margin_5"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/text_12_black_1"
+                            android:text="餐盒费" />
+
+                        <TextView
+                            android:id="@+id/tv_BoxFeeFoodPay"
+                            style="@style/text_12_black_2"
+                            android:layout_width="80dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="￥0.0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rect_shoppingFeeFoodPay"
+                        style="@style/base_m_w"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:layout_marginTop="@dimen/common_margin_5"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/text_12_black_1"
+                            android:text="配送费" />
+
+                        <TextView
+                            android:id="@+id/tv_serviceFeeFoodPay"
+                            style="@style/text_12_black_2"
+                            android:layout_width="80dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="￥0.0" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_action_description"
+                        style="@style/text_12_black_1"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:text="已享受最优惠活动: " />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_order_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_padding"></android.support.v7.widget.RecyclerView>
+
+                    <!-- 活动 -->
+                    <!--<RelativeLayout-->
+                    <!--android:id="@+id/rectCouponFoodPayDetail"-->
+                    <!--style="@style/base_m_w"-->
+                    <!--android:layout_marginLeft="@dimen/common_padding"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<TextView-->
+
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:text="优惠券"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_couponCutFoodPayDetail"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:textColor="@color/red_orange"-->
+                    <!--android:text="-￥0"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:id="@+id/rect_action_discount"-->
+                    <!--style="@style/base_m_w"-->
+                    <!--android:layout_marginLeft="@dimen/common_padding"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_special_price"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:textColor="@color/red_money"-->
+                    <!--android:text="特价菜活动"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_action_discount"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:textColor="@color/red_money"-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:text="-￥0"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                    <!--android:id="@+id/rect_limit_discount"-->
+                    <!--style="@style/base_m_w"-->
+                    <!--android:layout_marginLeft="@dimen/common_padding"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_store_limit"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:text="商家满减活动"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_limit_discount"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:textColor="@color/red_money"-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:text="-￥0"/>-->
+                    <!--</RelativeLayout>-->
+                    <!-- 活动 -->
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/driver_h"
+                    android:layout_marginLeft="@dimen/common_padding"
+                    android:layout_marginRight="@dimen/common_padding"
+                    android:layout_marginTop="8dp" />
+
+                <RelativeLayout
+                    style="@style/base_m_w"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:paddingRight="@dimen/common_padding">
+
+                    <TextView
+                        android:id="@+id/tvNumFoodDetail"
+                        style="@style/text_14_black_1"
+                        android:layout_marginRight="@dimen/common_padding"
+                        android:text="共2份美食" />
+
+
+                    <RelativeLayout
+                        style="@style/base_w_w"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            style="@style/text_14_black_1"
+                            android:layout_toLeftOf="@+id/tv_sumPriceFoodPayDetail"
+                            android:text="实付" />
+
+                        <TextView
+                            android:id="@+id/tv_sumPriceFoodPayDetail"
+                            style="@style/text_14_black_1"
+                            android:layout_width="80dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="￥0.5" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_food_pay_buttom_bar" />
+
+</LinearLayout>

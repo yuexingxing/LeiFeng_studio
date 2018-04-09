@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_white"
+    android:padding="12dp" >
+
+    <EditText
+        android:id="@+id/et_nickUserInfor"
+        style="@style/com_et"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="输入昵称(最长10个字符)"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_modifyNikeUserInfor"
+        android:layout_marginTop="16dp"
+        android:text="确认修改"
+        style="@style/btn_green" />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TJExpandableTextView="http://schemas.android.com/apk/res-auto"
+    style="@style/base_m_w"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rl_item_root"
+        style="@style/ll_m_w_h"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:paddingTop="@dimen/common_margin_5">
+
+        <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="85dp">
+
+            <ImageView
+                android:id="@+id/iv_pic_supper"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_head_def" />
+
+            <TextView
+                android:id="@+id/tv_supper_goods_count"
+                style="@style/base_m_m"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape_circle_green_buy_car"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="16"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_5"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/common_margin_10">
+
+            <TextView
+                android:id="@+id/tv_supper_name"
+                style="@style/text_14_black_5"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/common_margin_8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="阿贤黄萌鸡米饭阿贤黄萌鸡米饭阿贤黄萌鸡米饭&#38;北京炸鸡"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_month_sellqty"
+                style="@style/text_12_black_1"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/common_margin_5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="月销量 1234" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_margin_5">
+
+                <TextView
+                    android:id="@+id/tv_supper_notice"
+                    style="@style/text_12_black_1"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_store_status"
+                    android:ellipsize="end"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:text="东区第一食堂；满15元起送，哈哈哈,哈哈哈" />
+
+                <TextView
+                    android:id="@+id/tv_supper_status"
+                    style="@style/text_12_black_1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_10"
+                    android:background="@drawable/shape_rect_gray_round_corner"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="8"
+                    android:paddingLeft="@dimen/common_margin_3"
+                    android:paddingRight="@dimen/common_margin_3"
+                    android:text="商家休息"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/common_margin_10"
+                android:background="#ebebeb"></View>
+
+            <!-- 活动，赠送，优惠等。。。 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/common_margin_10">
+
+                <ExpandableListView
+                    android:id="@+id/supper_activity_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:childDivider="@null"
+                    android:divider="@null"
+                    android:groupIndicator="@null" />
+
+                <LinearLayout
+                    android:id="@+id/ll_action_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_action_1"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/icon_user_invite" />
+
+                    <TextView
+                        android:id="@+id/tv_action_1"
+                        style="@style/text_12_black_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:text="满减活动" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

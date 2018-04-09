@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tajiang.leifeng">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.tajiang.leifeng" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.tajiang.leifeng"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <!-- 个推SDK权限配置结束 -->
+
+
+    <!--&lt;!&ndash; Push service 运行需要的权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.VIBRATE"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>-->
+    <!--<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>-->
+    <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
+
+    <!-- 百度地图 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+
+    <application
+        android:name=".application.TJApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 微信登录指定界面 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActivity"/>
+
+        <!-- 微信支付回调界面 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActivity"/>
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.GuiderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"/>
+
+        <!-- 网页 -->
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SchoolSelectAreaActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--选择学校-->
+        <activity
+            android:name=".activity.SchoolSelectActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--选择学校 - 选择餐厅-->
+        <activity
+            android:name=".activity.SchoolStoreActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--选择学校 - 选择餐厅和配送楼栋-->
+        <activity
+            android:name=".activity.SchoolSelectStoreAndBuildingActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--选择学校 - 选择城市-->
+        <activity
+            android:name=".activity.SchoolSelectCityActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 登录界面 -->
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tajiang.leifeng.action.LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 用户-用户注册 -->
+        <activity
+            android:name=".activity.UserRegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-找回密码 -->
+        <activity
+            android:name=".activity.UserFindPassWordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".activity.FoodActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 点餐-搜索 -->
+
+        <!-- 点餐-支付 -->
+        <activity
+            android:name=".activity.FoodPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 订单 - 未支付详情 -->
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 订单 - 未支付订单 - 支付 -->
+        <activity
+            android:name=".activity.OrderPayActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 订单 - 取消订单 -->
+        <activity
+            android:name=".activity.OrderCannelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 订单 - 取消成功 -->
+        <activity
+            android:name=".activity.ApplySuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单 - 退款详情-->
+        <activity android:name=".activity.DrawbackDetailActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 帮带 - 完善用户信息 -->
+        <activity
+            android:name=".activity.UserPassVerifyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 帮带 - 完善用户完成 -->
+        <activity
+            android:name=".activity.UserPassVerifySuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-优惠券 -->
+        <activity
+            android:name=".activity.UserCouponActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-钱包 -->
+        <activity
+            android:name=".activity.UserWalletActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-钱包 - 充值 -->
+        <activity
+            android:name=".activity.UserWalletAddActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tjapp"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- 用户-钱包 - 支付 -->
+        <activity
+            android:name=".activity.UserWalletAddPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-钱包 - 设置新支付密码 -->
+        <activity
+            android:name=".activity.UserWalletNewPassWordPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <!-- 用户-钱包 - 支付设置-->
+        <activity
+            android:name=".activity.UserWalletPassWordPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <!-- 用户-钱包 - 修改 - 支付密码 -->
+        <activity
+            android:name=".activity.UserWalletModifyPassWordPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <!-- 用户-钱包 - 重置 - 支付密码 -->
+        <activity
+            android:name=".activity.UserWalletResetPassWordPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <!-- 用户-钱包 - 交易明细 -->
+        <activity
+            android:name=".activity.UserWalletTransactionDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户-消息 -->
+        <activity
+            android:name=".activity.UserMsgActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 选择地址 -->
+        <activity
+            android:name=".activity.UserChooseAddressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 地址管理 -->
+        <activity
+            android:name=".activity.UserAdressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 地址管理 - 添加 -->
+        <activity
+            android:name=".activity.UserAdressAddActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 地址管理 - 编辑 -->
+        <activity
+            android:name=".activity.UserAdressEditActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 设置 -->
+        <activity
+            android:name=".activity.UserSetActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 信息 -->
+        <activity
+            android:name=".activity.UserInforActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 消息列表 -->
+        <activity
+            android:name=".activity.MessageListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 修改昵称 -->
+        <activity
+            android:name=".activity.UserInforChangeUsernameActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 修改密码 -->
+        <activity
+            android:name=".activity.UserInforChangePasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 历史订单 -->
+        <activity
+            android:name=".activity.UserOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 关于我们 - 关于我们 -->
+        <activity
+            android:name=".activity.UserAboutUsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 关于我们 - 商务合作 -->
+        <activity
+            android:name=".activity.UserSetBusinessCooperationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 建议 -->
+        <activity
+            android:name=".activity.UserAdviseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">dadsa
+        </activity>
+
+        <!-- 用户- 历史订单 - 食堂吃 -->
+        <activity
+            android:name=".activity.UserOrderDetialActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 客服中心 -->
+        <activity
+            android:name=".activity.UserServiceCenterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 订单- 评价 -->
+        <activity
+            android:name=".activity.EvaluateActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 订单- 夜宵 -->
+        <activity
+            android:name=".activity.SupperActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 客服中心 - 常见问题 -->
+        <activity
+            android:name=".activity.WebQuestionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 绑定手机 -->
+        <activity
+            android:name=".activity.BindPhoneActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 邀请好友 -->
+        <activity
+            android:name=".activity.UserInviteActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 用户- 选择优惠卷 -->
+        <activity
+            android:name=".activity.ChooseCouponActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- 下面都是三方集成配置的东西 -->
+        <!-- 支付宝网页支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="true"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- 新浪微博，必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- QQ登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1104683535"/>
+            </intent-filter>
+        </activity>
+
+        <!-- QQ登录 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置第三方Receiver -->
+        <!-- 需要替换成开发者自己的BroadcastReceiver文件全名-->
+        <receiver
+            android:name=".push.PushLeiFengReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.oxhWCMu1VD858outEi5551" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 个推SDK配置结束 -->
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5608eeeae0f55a200e0055ec"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="TaJiang"/>
+
+        <!--百度定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="90iFbeqgrGy1fc1extg08lHI"/>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="false"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+</manifest>

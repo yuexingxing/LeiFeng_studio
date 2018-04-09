@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_pswSeeAble"
+    android:layout_width="50dp"
+    android:layout_height="50dp" >
+
+    <ImageView
+        android:id="@+id/iv_pswSeeAble"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_icon_see_unable" />
+
+</FrameLayout>

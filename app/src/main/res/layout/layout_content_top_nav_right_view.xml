@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_viewNavRight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout style="@style/base_w_m">
+
+        <LinearLayout
+            android:id="@+id/rectContectTakerOrderDetail"
+            style="@style/ll_w_m_h_c"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_order_take_away_call" />
+
+            <TextView
+                android:id="@+id/tvTextCall"
+                style="@style/text_14_white"
+                android:layout_marginLeft="6dp"
+                android:text="联系送餐人" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectCannelOrderDetail"
+            style="@style/ll_w_m_h_c"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/text_14_white"
+                android:text="取消订单" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

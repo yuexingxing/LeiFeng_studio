@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/com_root_layout_ll_gray">
+
+    <TextView
+        android:id="@+id/tvDescTextNewPswPay"
+        style="@style/text_14_black_2"
+        android:layout_marginTop="20dp"
+        android:text="首次使用钱包请设置支付密码" />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/gpvNewPswPay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:gpvLineColor="@color/text_black_2" />
+
+
+</LinearLayout>

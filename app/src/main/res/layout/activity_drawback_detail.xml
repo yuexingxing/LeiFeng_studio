@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:text="退款金额"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/drawback_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:text="14元"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/driver_h"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:text="退回账户"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/drawback_pay_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:text="支付宝账户"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:text="退款流程:"
+            android:textColor="@color/text_black_1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/green_circle" />
+
+                <View
+                    style="@style/driver_v_green"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="26dp"
+                    android:background="@color/com_green" />
+
+                <ImageView
+                    android:id="@+id/iv_lf_applying"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/grey_circle" />
+
+                <View
+                    android:id="@+id/line_lf_applying"
+                    style="@style/driver_v_green"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="26dp"
+                    android:background="@color/com_driver" />
+
+                <ImageView
+                    android:id="@+id/iv_access"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/grey_circle" />
+
+                <View
+                    android:id="@+id/line_access"
+                    style="@style/driver_v_green"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="26dp"
+                    android:background="@color/com_driver" />
+
+                <ImageView
+                    android:id="@+id/iv_apply_success"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/grey_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:id="@+id/tv_submit_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提交退款申请"
+                        android:textColor="@color/text_black_1"
+                        android:textSize="@dimen/common_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_submit_apply_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_submit_apply"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="申请时间：2016年11月11日 12:29"
+                        android:textColor="@color/text_black_2"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp">
+
+                    <TextView
+                        android:id="@+id/tv_lf_applying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全民雷锋审核退款申请"
+                        android:textColor="@color/text_black_1"
+                        android:textSize="@dimen/common_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_lf_applying_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_lf_applying"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="审核时间：2016-07-07  10:04"
+                        android:textColor="@color/text_black_2"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="退款申请审核通过"
+                        android:textColor="@color/text_black_1"
+                        android:textSize="@dimen/common_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_access_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_access"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="审核时间：2016-07-08   10:04"
+                        android:textColor="@color/text_black_2"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_apply_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="处理成功，退款已打入支护宝账户"
+                        android:textColor="@color/text_black_1"
+                        android:textSize="@dimen/common_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_apply_success_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_apply_success"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="入账时间：2016-07-08   10:04"
+                        android:textColor="@color/text_black_2"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

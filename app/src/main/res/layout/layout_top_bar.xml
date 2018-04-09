@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_nav"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_nav_root_height"
+    android:background="@color/common_title_white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ViewStub
+            android:id="@+id/common_nav_left"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+
+        <ViewStub
+            android:id="@+id/common_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <ViewStub
+            android:id="@+id/common_nav_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!-- 此处可以添加TitleBarX下的分割线View -->
+
+</LinearLayout>

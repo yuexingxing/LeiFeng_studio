@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_nameFoodSelect"
+            style="@style/ll_m_w_h"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_good_name"
+                style="@style/text_14_black_5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingRight="@dimen/common_margin_5"
+                android:text="黄焖鸡米饭套餐" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_"
+                style="@style/base_m_w"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="4"
+                android:gravity="center|left">
+
+                <TextView
+                    style="@style/text_14_green"
+                    android:text="￥"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_money" />
+
+                <TextView
+                    android:id="@+id/tv_priceFoodSelect"
+                    style="@style/text_14_green"
+                    android:paddingRight="@dimen/common_margin_5"
+                    android:text="13.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_money" />
+
+                <!--<TextView-->
+                <!--android:layout_marginLeft="1dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/tv_PriceFoodAction"-->
+                <!--style="@style/text_16_black_3"/>-->
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_add_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_nameFoodSelect"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/iv_special_food"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_special_food"
+                    android:visibility="gone" />
+
+                <com.tajiang.leifeng.view.NumControlView
+                    android:id="@+id/ncv_numFoodSelect"
+                    android:layout_width="120dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/driver_h"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"></View>
+
+</RelativeLayout>

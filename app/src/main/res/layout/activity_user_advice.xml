@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray"
+    android:padding="12dp">
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:background="@drawable/shape_rect_round_white_line_gray">
+
+        <EditText
+            android:id="@+id/etContentFeedBack"
+            style="@style/com_et"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="left|top"
+            android:hint="请留下您的宝贵意见和建议,我们将努力改进"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmitFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/slt_btn_rect_green"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

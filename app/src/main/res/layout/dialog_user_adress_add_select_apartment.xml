@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_m_v">
+
+    <View
+        android:id="@+id/rectBgSelectApartmentDialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom"
+        android:background="#eeeeee">
+
+                <TextView
+                    android:id="@+id/tvNameSchoolApartmentDialog"
+                    style="@style/text_14_black_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="浙江师范大学" />
+
+                <LinearLayout
+                    style="@style/ll_m_m_h">
+
+                    <ListView
+                        android:id="@+id/lvRectApartment"
+                        android:layout_weight="1"
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ListView
+                        android:id="@+id/lvApartment"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:divider="@null"
+                        android:scrollbars="none"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+</LinearLayout>

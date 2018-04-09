@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/com_root_layout_ll_gray">
+
+    <ListView
+        android:id="@+id/lvAdvHome"
+        style="@style/base_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:paddingBottom="5dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="70dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_nav_root_height">
+
+            <LinearLayout
+                android:id="@+id/rectChangeSchool"
+                style="@style/ll_w_m_h_c"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    style="@style/ll_w_w_h"
+                    android:background="@drawable/shape_rect_circle_black_alpha"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/icon_local_white"/>
+
+                    <TextView
+                        android:id="@+id/tv_nameStoreSelectFood"
+                        style="@style/text_16_white"
+                        android:layout_marginLeft="3dp"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:text="全民雷锋"/>
+
+                    <ImageView
+                        android:id="@+id/ivSelectStoreFoodSelect"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_select_white"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

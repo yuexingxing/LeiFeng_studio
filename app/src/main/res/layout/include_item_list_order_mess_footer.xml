@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_w_v_c"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_numStoreOrderMess"
+            style="@style/base_et"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textColorHint="@color/text_black_2"
+            android:layout_weight="1"
+            android:background="@drawable/bg_user_complete_infor"
+            android:gravity="bottom"
+            android:inputType="number"
+            android:hint="请填写座位号"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_chooseNumStoreOrderMess"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/slt_btn_rect_green"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_w_w_h"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:text="请到餐厅" />
+
+        <TextView
+            style="@style/text_12_green"
+            android:text="雷锋就餐区"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:text="，然后输入桌面左下角的编号" />
+    </LinearLayout>
+
+    <View
+        style="@style/driver_h"
+        android:layout_marginTop="6dp" />
+
+    <LinearLayout style="@style/ll_m_w_h_c" >
+
+        <ImageView
+            android:id="@+id/iv_codeOrderMess"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/shape_rect_round_gray" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:text="如果食堂没有餐位，请到雷锋取餐窗口出示此二维码领取套餐" />
+    </LinearLayout>
+
+</LinearLayout>

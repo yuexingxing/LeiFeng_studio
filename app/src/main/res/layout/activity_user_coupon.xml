@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_white"
+    android:background="@color/com_layout_bg">
+    
+    <include layout="@layout/include_coupon_empty"/>
+
+    <LinearLayout
+        android:id="@+id/ll_coupon_category"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/img_coupon_usable"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_coupon_usable"
+            android:layout_weight="1"
+            style="@style/text_14_black_1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="可用红包"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_disable"
+            android:layout_weight="1"
+            style="@style/text_14_black_1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="历史红包"
+            android:textColor="@color/com_green"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_coupon"
+        android:layout_marginTop="45dp"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_layout_bg"
+        android:divider="@color/transparent" />
+
+    <Button
+        android:id="@+id/btn_cashUserCoupon"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/icon_food_pay_swingbar"
+        android:text="优惠券提现"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</FrameLayout>

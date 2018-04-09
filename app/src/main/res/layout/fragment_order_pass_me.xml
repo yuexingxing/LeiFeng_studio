@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray" >
+
+    <include layout="@layout/include_order_empty" />
+
+    <com.tajiang.leifeng.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/plv_passmeOrder"
+        android:layout_marginTop="2dp" 
+        style="@style/base_m_m" />
+
+</FrameLayout>

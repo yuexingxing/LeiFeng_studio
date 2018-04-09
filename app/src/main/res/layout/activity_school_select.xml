@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/com_root_layout_ll_gray">
+
+    <include layout="@layout/layout_school_search"/>
+
+    <ListView
+        android:id="@+id/lv_schoolList"
+        style="@style/base_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"/>
+</LinearLayout>

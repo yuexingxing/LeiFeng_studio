@@ -1,0 +1,481 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/com_green</item>
+        <item name="colorPrimaryDark">@color/com_green_dark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog_operate" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/OperateDialogAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_psw_pay" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <!-- 没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="default_dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="dialog_full_screen" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_loading" parent="dialog_operate">
+
+    </style>
+
+    <style name="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tag_textColor">#49C120</item>
+        <item name="tag_backgroundColor">#FFFFFF</item>
+        <item name="tag_inputHintColor">#80000000</item>
+        <item name="tag_inputTextColor">#DE000000</item>
+        <item name="tag_checkedTextColor">#FFFFFF</item>
+        <item name="tag_checkedBackgroundColor">#49C120</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_textSize">12sp</item>
+        <item name="tag_horizontalSpacing">5dp</item>
+        <item name="tag_verticalSpacing">5dp</item>
+        <item name="tag_horizontalPadding">12dp</item>
+        <item name="tag_verticalPadding">3dp</item>
+        <item name="tag_radius">5dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">#49C120</item>
+        <item name="tag_strokeWidth">1px</item>
+        <item name="tag_multiChooseable">true</item>
+        <item name="tag_singleLine">true</item>
+        <!--<item name="tag_width">wrap_content</item>-->
+        <!--<item name="tag_height">wrap_content</item>-->
+        <item name="tag_width">85</item>
+        <item name="tag_height">30</item>
+    </style>
+
+    <style name="FlowlayoutTags.Beauty_Red1" parent="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="tag_textColor">@color/base_color_0</item>
+        <item name="tag_backgroundColor">@color/base_color_6</item>
+        <item name="tag_checkedTextColor">@color/base_color_6</item>
+        <item name="tag_checkedBackgroundColor">@color/base_color_0</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_radius">5dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">@color/base_color_0</item>
+        <item name="tag_strokeWidth">1px</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="tag_horizontalPadding">0dp</item>
+        <item name="tag_verticalPadding">0dp</item>
+        <!--单位dp-->
+        <item name="tag_width">85</item>
+        <item name="tag_height">30</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="tag_maxEms">5</item>
+        <!--单选-->
+        <item name="tag_multiChooseable">false</item>
+    </style>
+
+    <style name="FlowlayoutTags.Beauty_Red2" parent="FlowlayoutTags">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="tag_textColor">@color/base_color_3</item>
+        <item name="tag_backgroundColor">@color/gray</item>
+        <item name="tag_checkedTextColor">@color/base_color_6</item>
+        <item name="tag_checkedBackgroundColor">@color/com_green</item>
+        <item name="tag_pressedBackgroundColor">#EDEDED</item>
+        <item name="tag_radius">50dp</item>
+        <item name="tag_strokeColor">@drawable/gray_white_selector</item>
+        <item name="tag_checkedStrokeColor">@color/com_green</item>
+        <item name="tag_strokeWidth">1px</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="tag_horizontalPadding">8dp</item>
+        <item name="tag_verticalPadding">5dp</item>
+
+        <!--这里设置wrap_content时候tag_maxEms不会起作用的-->
+        <item name="tag_maxEms">-1</item>
+        <item name="tag_width">wrap_content</item>
+        <item name="tag_height">wrap_content</item>
+
+    </style>
+
+    <style name="TransparentActivity">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="OperateDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+    <!-- 基础 Style -->
+    <style name="base_w_w">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_m_m">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_w_m">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_m_w">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 通用TextView Style -->
+
+    <style name="text_10_green" parent="base_w_w">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/com_green</item>
+    </style>
+
+    <style name="text_10_black_1" parent="base_w_w">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_black_1</item>
+    </style>
+
+    <style name="text_10_black_2" parent="base_w_w">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_black_2</item>
+    </style>
+
+    <style name="text_10_black_3" parent="base_w_w">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_black_3</item>
+    </style>
+
+    <style name="text_12_black_1" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black_1</item>
+    </style>
+
+    <style name="text_12_black_2" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black_2</item>
+    </style>
+
+    <style name="text_12_black_3" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black_3</item>
+    </style>
+
+    <style name="text_12_black_5" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black_5</item>
+    </style>
+
+    <style name="text_12_green" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/com_green</item>
+    </style>
+
+    <style name="text_12_white" parent="base_w_w">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_14_black_1" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black_1</item>
+    </style>
+
+    <style name="text_14_black_2" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black_2</item>
+    </style>
+
+    <style name="text_14_black_3" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black_3</item>
+    </style>
+
+    <style name="text_14_black_5" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black_5</item>
+    </style>
+
+    <style name="text_14_green" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/com_green</item>
+    </style>
+
+    <style name="text_14_white" parent="base_w_w">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_16_black_1" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black_1</item>
+    </style>
+
+    <style name="text_16_black_2" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black_2</item>
+    </style>
+
+    <style name="text_16_black_3" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black_3</item>
+    </style>
+
+    <style name="text_16_black_5" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_black_5</item>
+    </style>
+
+    <style name="text_16_green" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/com_green</item>
+    </style>
+
+    <style name="text_16_white" parent="base_w_w">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 基本EditText Style -->
+    <style name="base_et">
+        <item name="android:textColorHint">@color/com_et_hint_color</item>
+        <item name="android:textColor">@color/com_et_text_color</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 通用EditText Style -->
+    <style name="com_et" parent="base_et">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="et_phone" parent="base_et">
+        <item name="android:singleLine">true</item>
+        <item name="android:digits">1234567890</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">13</item>
+    </style>
+
+    <style name="et_code" parent="base_et">
+        <item name="android:singleLine">true</item>
+        <item name="android:digits">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <style name="et_psd" parent="base_et">
+        <item name="android:maxLength">16</item>
+        <item name="android:digits">
+            qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890.
+        </item>
+        <item name="android:password">true</item>
+        <item name="android:hint">输入密码</item>
+    </style>
+
+    <!-- ListView -->
+    <style name="base_list" parent="base_m_w">
+        <item name="android:divider">@color/com_driver</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- 通用Layout Style -->
+    <style name="ll_m_m_v" parent="base_m_m">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_m_m_v_c" parent="ll_m_m_v">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ll_m_w_v" parent="base_m_w">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_m_w_v_c" parent="ll_m_w_v">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ll_m_w_h" parent="base_m_w">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_w_w_h" parent="base_w_w">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_w_w_h_c" parent="ll_w_w_h">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll_w_m_h_c" parent="base_w_m">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll_m_m_h" parent="base_m_m">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_m_m_h_c" parent="ll_m_m_h">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll_m_w_h_c" parent="ll_m_w_h">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="com_root_layout_ll_gray" parent="ll_m_m_v">
+        <item name="android:background">@color/com_layout_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="com_root_layout_ll_white" parent="ll_m_m_v">
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="dialog_white" parent="ll_w_w_v">
+        <item name="android:background">@drawable/shape_rect_round_white</item>
+    </style>
+
+    <style name="ll_w_w_v" parent="base_w_w">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_w_w_v_c" parent="ll_w_w_v">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 划分线 -->
+
+    <style name="driver_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/com_driver</item>
+    </style>
+
+    <style name="driver_v">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/com_driver</item>
+    </style>
+
+    <!-- Wechat Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="btn_green">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/slt_btn_rect_green</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <!--<item name="android:stateListAnimator" tools:targetApi="lollipop">@null</item>-->
+    </style>
+
+    <style name="ThemeGuide">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 背景透明,如果窗体没有设置背景色，设置此项会变成透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置背景颜色（此处设置背景为透明）-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊,控制窗口以外的地方是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置界面是否全屏 -->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="driver_v_green">
+        <item name="android:layout_width">3px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/com_green</item>
+    </style>
+
+    <style name="paymentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/payment_ratingbar</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:minHeight">28dip</item>
+        <item name="android:maxHeight">28dip</item>
+    </style>
+
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/inputodown</item>
+        <item name="android:windowExitAnimation">@anim/outdowntoup</item>
+    </style>
+</resources>

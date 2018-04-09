@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray">
+
+    <RelativeLayout
+        style="@style/base_m_w"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tvNumAddPay"
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:text="充值金额：￥110" />
+
+        <FrameLayout
+            style="@style/base_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/ivPayActivityBg"
+                android:layout_width="108dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_pay_activity_normal" />
+
+            <TextView
+                android:id="@+id/tvActionText"
+                style="@style/text_14_black_1"
+                android:layout_gravity="center"
+                android:text="活动" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <View
+        style="@style/driver_h"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+        style="@style/ll_m_w_h_c"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:text="还需支付:" />
+
+        <TextView
+            android:id="@+id/tvAddPay"
+            style="@style/text_14_green"
+            android:text="￥100" />
+
+    </LinearLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_zhifubaoFoodPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_zhifubao_pay" />
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_marginLeft="16dp"
+                android:text="支付宝" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_zhifubaoRadio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_radio_selected" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_weixinFoodPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/slt_rect_white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            style="@style/ll_w_w_h_c"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_weixin_pay" />
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_marginLeft="16dp"
+                android:text="微信支付" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_weixinRadio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_radio_normal" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDoPayAdd"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="确认支付"
+        style="@style/btn_green" />
+</LinearLayout>

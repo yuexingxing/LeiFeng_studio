@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_dex"
+        style="@style/text_14_black_5"
+        android:layout_width="match_parent"
+        android:text="黄萌鸡米饭阿贤黄萌鸡米饭黄萌鸡米饭阿贤黄萌鸡米饭黄萌鸡米饭阿贤黄萌鸡米饭黄萌鸡米饭阿贤黄萌鸡米饭&#38;北京炸鸡"/>
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_dex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="16dp"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+</LinearLayout>

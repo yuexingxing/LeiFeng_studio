@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_w_v"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="10dp" >
+
+        <LinearLayout style="@style/ll_w_w_h_c" >
+
+            <com.tajiang.leifeng.view.CircleImageView
+                android:id="@+id/iv_iconOrderRap"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/tv_adressOrderRap"
+                style="@style/text_14_black_1"
+                android:layout_marginLeft="10dp"
+                android:text="8幢306" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_takeOrderRap"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/slt_btn_rect_green"
+            android:text="接单"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/driver_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        style="@style/ll_m_w_h_c"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_nameGoodOrderRap"
+            style="@style/text_14_black_2"
+            android:text="海鲜套餐" />
+
+        <TextView
+            android:id="@+id/tv_nameStoreOrderRap"
+            style="@style/text_12_black_2"
+            android:layout_marginLeft="30dp"
+            android:text="第二餐厅" />
+    </LinearLayout>
+
+</LinearLayout>

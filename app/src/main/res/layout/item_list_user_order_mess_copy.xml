@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_w_v"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_timeOrderUserMess"
+            style="@style/text_14_black_1"
+            android:layout_centerVertical="true"
+            android:text="2015-08-16" />
+
+        <TextView
+            android:id="@+id/tv_nameStoreOrderUserMess"
+            style="@style/text_14_black_1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="美食城餐厅" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        style="@style/ll_m_w_h"
+        android:layout_height="104dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_picOrderUserMess"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_food_pic" />
+
+        <RelativeLayout
+            style="@style/base_m_m"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_nameFoodOrderUserMess"
+                style="@style/text_14_black_2"
+                android:text="海鲜全套餐" />
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_14_black_2"
+                    android:text="总价：￥" />
+
+                <TextView
+                    android:id="@+id/tv_sumMoneyOrderUserMess"
+                    style="@style/text_14_black_1"
+                    android:text="36.00" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_enter_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

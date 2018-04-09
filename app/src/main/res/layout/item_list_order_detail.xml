@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              style="@style/ll_m_m_h"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="12dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_picGoodOrderDetail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/icon_empty_good"
+        fresco:roundedCornerRadius="3dp"
+        fresco:roundingBorderColor="@color/com_driver"
+        fresco:roundingBorderWidth="1px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout style="@style/ll_w_w_v">
+
+            <TextView
+                android:id="@+id/tv_nameGoodOrderDetail"
+                style="@style/text_14_black_2"
+                android:text="海鲜全套餐"/>
+
+            <TextView
+                android:id="@+id/tv_nameStoreOrderDetail"
+                style="@style/text_12_black_2"
+                android:layout_marginTop="10dp"
+                android:text="第二餐厅"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_w_w_h"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:text="￥"/>
+
+            <TextView
+                android:id="@+id/tv_priceGoodOrderDetail"
+                style="@style/text_14_black_1"
+                android:text="12.00"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

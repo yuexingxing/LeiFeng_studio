@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout style="@style/ll_w_m_h_c">
+
+            <ImageView
+                android:id="@+id/ivIconScreen"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/test_food_type" />
+
+            <TextView
+                android:id="@+id/ivDecsScreen"
+                style="@style/text_14_black_2"
+                android:layout_marginLeft="10dp"
+                android:text="热卖" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

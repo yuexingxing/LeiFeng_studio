@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_m_v"
+    android:background="@color/com_layout_bg">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/com_root_layout_ll_gray"
+        android:background="@color/com_layout_bg">
+
+
+        <RelativeLayout
+            android:id="@+id/view_pswChangeUserInfor"
+            style="@style/base_m_w"
+            android:layout_height="50dp"
+            android:background="@drawable/slt_rect_white"
+            android:clickable="true"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding">
+
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_padding"
+                    android:layout_marginRight="8dp"
+                    android:text="修改当前密码" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_enter_gray" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            style="@style/driver_h"
+            android:layout_marginLeft="@dimen/common_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/view_aboutUserSet"
+                style="@style/base_m_w"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_14_black_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:text="关于雷锋" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_enter_gray" />
+            </RelativeLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_marginLeft="@dimen/common_padding" />
+
+            <RelativeLayout
+                android:id="@+id/view_companyUserSet"
+                style="@style/base_m_w"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_14_black_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:text="商务合作" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_enter_gray" />
+            </RelativeLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_marginLeft="@dimen/common_padding" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_loginOutUserSet"
+                style="@style/base_m_w"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_14_black_1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_padding"
+                        android:text="退出登录" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_enter_gray" />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/driver_h"
+                android:layout_marginLeft="@dimen/common_padding" />
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/view_clearCacheUserSet"-->
+        <!--style="@style/base_m_w"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/slt_rect_white"-->
+        <!--android:paddingLeft="@dimen/common_padding"-->
+        <!--android:paddingRight="@dimen/common_padding"-->
+        <!--android:visibility="visible">-->
+
+
+        <!--<LinearLayout-->
+        <!--style="@style/ll_w_w_h_c"-->
+        <!--android:layout_centerVertical="true">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:src="@drawable/icon_clean_cache"/>-->
+
+        <!--<TextView-->
+        <!--style="@style/text_14_black_1"-->
+        <!--android:layout_marginLeft="@dimen/common_padding"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="清除缓存"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_cache_size"-->
+        <!--style="@style/text_14_black_1"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="1.32MB"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<View style="@style/driver_h"/>-->
+
+        <RelativeLayout
+            android:id="@+id/view_imageQualityUserSet"
+            style="@style/base_m_w"
+            android:layout_height="50dp"
+            android:background="@drawable/slt_rect_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_centerVertical="true"
+                android:text="非wifi下图片质量" />
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="普通" />
+        </RelativeLayout>
+
+        <View
+            style="@style/driver_h"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_loginOutUserSet"-->
+    <!--style="@style/btn_green"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:background="@drawable/slt_btn_rect_red"-->
+    <!--android:text="退出登录"/>-->
+
+</RelativeLayout>

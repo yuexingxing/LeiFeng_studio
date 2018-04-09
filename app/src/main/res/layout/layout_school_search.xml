@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/base_m_w">
+
+    <FrameLayout
+        style="@style/base_m_w"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding"
+            android:background="@drawable/shape_rect_circle_gray_school_search"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_school_search"/>
+
+            <EditText
+                android:id="@+id/actv_schoolSearch"
+                style="@style/base_m_m"
+                android:singleLine="true"
+                android:layout_marginLeft="6dp"
+                android:background="@color/transparent"
+                android:hint="输入高校名称搜索"
+                android:textColorHint="@color/com_text_gray"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

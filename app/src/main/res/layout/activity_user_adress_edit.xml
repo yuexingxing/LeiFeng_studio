@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/com_root_layout_ll_gray">
+
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_padding">
+
+        <LinearLayout
+            style="@style/ll_m_w_h"
+            android:layout_height="90dp">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="联系人："/>
+
+            <LinearLayout
+                style="@style/ll_m_m_v">
+
+                <EditText
+                    android:id="@+id/et_nameUserAddressAdd"
+                    style="@style/base_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="姓名"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"/>
+
+                <View
+                    style="@style/driver_h"/>
+
+                <LinearLayout
+                    style="@style/ll_m_w_h_c"
+                    android:layout_height="45dp">
+
+                    <LinearLayout
+                        android:id="@+id/rectManSexAdress"
+                        style="@style/ll_w_m_h_c">
+
+                        <ImageView
+                            android:id="@+id/ivManAdressAdd"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/icon_radio_selected"/>
+
+                        <TextView
+                            style="@style/text_14_black_1"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="男"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rectWomanSexAdress"
+                        style="@style/ll_w_m_h_c"
+                        android:layout_marginLeft="44dp">
+
+                        <ImageView
+                            android:id="@+id/ivWomanAdressAdd"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+
+                            android:src="@drawable/icon_radio_normal"/>
+
+                        <TextView
+                            style="@style/text_14_black_1"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="女"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/driver_h"/>
+
+        <LinearLayout
+            style="@style/ll_m_w_h_c"
+            android:layout_height="45dp">
+
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="手机号："/>
+
+            <EditText
+                android:id="@+id/et_phoneUserAddressAdd"
+                style="@style/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="手机号"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/driver_h"
+        android:layout_marginLeft="@dimen/common_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_padding">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="寝室楼："/>
+
+        <TextView
+            android:id="@+id/tv_apartmentUserAddressAdd"
+            style="@style/base_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="宿舍楼"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_enter_gray"/>
+    </LinearLayout>
+
+    <View style="@style/driver_h"
+        android:layout_marginLeft="@dimen/common_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_padding">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="寝室号："/>
+
+        <EditText
+            android:id="@+id/et_roomUserAddressAdd"
+            style="@style/base_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="寝室号"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <View style="@style/driver_h"
+        android:layout_marginLeft="@dimen/common_padding"/>
+
+    <Button
+        android:id="@+id/btn_addAdressUser"
+        style="@style/btn_green"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="24dp"
+        android:text="确定"/>
+
+</LinearLayout>

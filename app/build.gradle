@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '24'
+    defaultConfig {
+        applicationId "com.tajiang.leifeng"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 27
+        versionName "3.1.5"
+        multiDexEnabled true
+        //APP_ID、APP_KEY、APP_SECRET请根据个推开发者后台申请到的应用参数进行相应替换
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "oxhWCMu1VD858outEi5551",
+                GETUI_APP_KEY   : "yxWhZH56Vf5ptTjkY3iEf6",
+                GETUI_APP_SECRET: "uRL0Autvt46tJZ0B0WmlSA",
+                PACKAGE_NAME    : applicationId
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+
+    }
+
+//    signingConfigs {
+//        release {
+//            keyAlias 'android.keystore'
+//            keyPassword 'tajiang123456'
+//            storeFile file('D:/tj/keystores/android.keystore')
+//            storePassword 'tajiang123456'
+//        }
+//    }
+
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+//    productFlavors {
+//        dev {
+//            minSdkVersion 21
+//        }
+//    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    allprojects {
+        repositories {
+            jcenter()
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+
+    dependencies {
+        compile(name: 'pickerview', ext: 'aar')
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile 'com.getui:sdk:2.9.0.0'
+
+        compile 'com.android.support:support-v4:23.3.0'
+        compile 'com.android.support:appcompat-v7:23.3.0'
+        compile 'com.android.support:recyclerview-v7:23.3.0'
+        compile 'com.google.code.gson:gson:2.3'
+        compile 'com.jungly:gridPasswordView:0.3'
+        compile 'com.facebook.fresco:fresco:0.10.0+'
+        compile 'com.github.orhanobut:logger:1.12'
+        compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+        compile 'com.bigkoo:convenientbanner:2.0.5'
+        compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+        compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+        compile 'com.ms-square:expandableTextView:0.1.4'
+        compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+        compile 'com.github.Aspsine:SwipeToLoadLayout:+'
+        compile 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
+
+
+        //retrofit, rxjava
+        compile 'io.reactivex:rxandroid:1.2.0'
+        compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+        compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+        compile 'com.squareup.retrofit2:retrofit:2.0.2'
+        compile 'com.squareup.retrofit2:retrofit-mock:2.0.2'
+        compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+        //BottomSheet From BuyCar
+        compile 'com.flipboard:bottomsheet-core:1.5.2'
+        //图片加载框架Glide
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    }
+}
+dependencies {
+    compile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:25.3.1'
+}

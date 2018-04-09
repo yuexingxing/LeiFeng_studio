@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              style="@style/base_m_w"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/ll_m_w_h">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_picFoodPayMess"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                fresco:roundedCornerRadius="3dp"
+                android:scaleType="centerCrop"
+                fresco:roundingBorderWidth="1px"
+                fresco:roundingBorderColor="@color/com_driver"
+                fresco:placeholderImage="@drawable/icon_empty_good"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/iv_nameFoodPayMess"
+                    style="@style/text_12_black_1"
+                    android:singleLine="true"
+                    android:text="黄焖鸡米饭套餐"/>
+
+                <RelativeLayout
+                    style="@style/ll_w_w_v"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_16_green"
+                            android:textColor="@color/red_orange"
+                            android:text="￥"/>
+
+                        <TextView
+                            android:id="@+id/iv_priceFoodPayMess"
+                            style="@style/text_16_green"
+                            android:textColor="@color/red_orange"
+                            android:text="13.5"/>
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/ivPriceFoodPayAction"-->
+                            <!--style="@style/text_16_black_3"-->
+                            <!--android:layout_marginLeft="6dp"/>-->
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_goods_count"
+                        android:layout_alignParentRight="true"
+                        style="@style/text_16_black_1"
+                        android:text="1份"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<com.tajiang.leifeng.view.NumControlView-->
+            <!--android:id="@+id/iv_numFoodPayMess"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

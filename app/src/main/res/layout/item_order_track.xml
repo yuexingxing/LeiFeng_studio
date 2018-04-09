@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_fast_freigh_ttail_after"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/item_track_shangxian"
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:background="#f2f2f2" />
+
+            <View
+                android:id="@+id/item_track_xiaxian"
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:background="#f2f2f2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_track_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/track_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="5"
+            android:text="dsajdfklsaffff" />
+
+        <TextView
+            android:id="@+id/track_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="2012-121-2" />
+    </RelativeLayout>
+
+</LinearLayout>

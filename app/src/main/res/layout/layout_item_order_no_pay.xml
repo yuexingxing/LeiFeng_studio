@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/tools"
+              android:id="@+id/rectContentNoPay"
+              style="@style/ll_m_w_h"
+              android:layout_width="wrap_content">
+
+    <LinearLayout style="@style/ll_m_w_v">
+
+        <LinearLayout
+            style="@style/ll_m_w_h"
+            android:background="@color/white"
+            android:padding="12dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/tv_picOrderNoPay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                fresco:placeholderImage="@drawable/icon_empty_good"
+                fresco:roundedCornerRadius="3dp"
+                fresco:roundingBorderColor="@color/com_driver"
+                fresco:roundingBorderWidth="1px"/>
+
+            <LinearLayout
+                android:id="@+id/rectOrderInforNoPay"
+                style="@style/ll_m_w_h"
+                android:layout_marginLeft="10dp">
+
+                <RelativeLayout
+                    style="@style/base_w_m"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvNameStoreOrderNoPay"
+                        style="@style/text_14_black_1"
+                        android:text="第一餐厅"/>
+
+                    <TextView
+                        android:id="@+id/tvFoodNameOrderNoPay"
+                        style="@style/text_12_black_2"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="海鲜全套餐"/>
+
+                    <TextView
+                        android:id="@+id/tvOrderPriceOrderNoPay"
+                        style="@style/text_14_green"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:text="￥10"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_order_unpay"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/driver_h"/>
+
+        <RelativeLayout
+            android:id="@+id/rectPayRect"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                style="@style/ll_w_w_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/btnCannelOrderNoPay"
+                    android:layout_width="80dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/shape_rect_round_gray"
+                    android:text="取消支付"
+                    android:textColor="@color/text_black_3"
+                    android:textSize="14sp"/>
+
+                <com.tajiang.leifeng.view.TimingButton
+                    android:id="@+id/btnDoPayOrderNoPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/slt_btn_rect_green"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="去付款"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

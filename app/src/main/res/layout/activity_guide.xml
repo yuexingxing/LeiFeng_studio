@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m"
+    android:background="#f4f4f4">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_comeInGuide"
+            android:gravity="center"
+            android:textColor="#1D6ABC"
+            android:layout_width="140dp"
+            android:text="立即体验"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_rect_round_line_blue"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_user_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/user_guide_01"/>
+
+</FrameLayout>

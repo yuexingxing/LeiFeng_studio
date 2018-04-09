@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m"
+    android:gravity="center"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp">
+        <ImageView
+            android:id="@+id/iv_hide_view"
+            android:layout_width="30dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_del_announcement"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_20"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/img_bg_announcement">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/common_margin_80"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_margin_5"
+                android:text="商家公告"/>
+            <EditText
+                android:id="@+id/et_store_stalls_notice"
+                style="@style/text_14_black_1"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:editable="false"
+                android:paddingRight="@dimen/common_margin_5"
+                android:background="@null"
+                android:layout_height="120dp"
+                android:textColor="@color/white"
+                android:scrollbars="vertical"
+                android:layout_marginTop="@dimen/common_margin_20"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_20"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <View style="@style/driver_h"
+                    android:background="@color/white"
+                    android:layout_height="2dp"
+                    android:layout_width="80dp"></View>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginRight="@dimen/common_margin_20"
+                    android:background="@drawable/icon_dot_whitw"></View>
+                <TextView
+                    style="@style/text_16_black_1"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="优惠活动"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/common_margin_20"
+                    android:background="@drawable/icon_dot_whitw"></View>
+                <View style="@style/driver_h"
+                    android:background="@color/white"
+                    android:layout_height="2dp"
+                    android:layout_width="80dp"></View>
+            </LinearLayout>
+
+            <!-- 活动，赠送，优惠等。。。 -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_action_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_margin_10"
+                android:layout_marginBottom="@dimen/common_margin_10">>
+
+            </android.support.v7.widget.RecyclerView>
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="@dimen/common_margin_10"-->
+                <!--android:layout_marginBottom="@dimen/common_margin_10">-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_activity_root"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                <!--</LinearLayout>-->
+            <!--</ScrollView>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

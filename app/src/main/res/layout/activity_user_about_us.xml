@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m" >
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_user_about" />
+
+        <TextView
+            style="@style/text_14_black_3"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.3"
+            android:text="        首创全国高校后勤服务平台，从校园食堂切入，以手机互联网的先进性改善学生在校园食堂内的用餐体验，为校园食堂提供线上运作，数字化管理，提升食堂管理有效性，实现食堂与学生之间的良性交互循环。" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="16dp" >
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="版权信息" />
+
+        <TextView
+            android:id="@+id/tv_versionApp"
+            style="@style/text_12_black_3"
+            android:layout_marginTop="4dp"
+            android:text="V1.02" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:layout_marginTop="6dp"
+            android:text="杭州塔酱科技有限公司" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_m" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@drawable/shape_rect_round_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_select_store" >
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_select_store_icon" />
+
+                <TextView
+                    style="@style/text_14_white"
+                    android:text="请选择您的学校和餐厅" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.tajiang.leifeng.view.expandablelist.ActionSlideExpandableListView
+            android:id="@+id/list"
+            style="@style/base_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

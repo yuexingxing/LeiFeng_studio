@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             style="@style/ll_m_w_h">
+
+    <LinearLayout style="@style/ll_m_w_v">
+
+        <LinearLayout
+            android:id="@+id/rectMessOrderInforHasPay"
+            style="@style/ll_m_w_h"
+            android:background="@color/white"
+            android:padding="12dp">
+
+
+            <ImageView
+                android:id="@+id/tv_picOrderMess"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test_food_pic"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout style="@style/ll_w_w_v">
+
+                    <TextView
+                        android:id="@+id/tv_nameOrderMess"
+                        style="@style/text_14_black_1"
+                        android:text="美食城"/>
+
+                    <TextView
+                        android:id="@+id/tv_goodNameOrderMess"
+                        style="@style/text_12_black_2"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="海鲜面"/>
+
+                    <LinearLayout
+                        style="@style/ll_w_w_h"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/text_16_black_3"
+                            android:text="￥"/>
+
+                        <TextView
+                            android:id="@+id/tv_priceOrderMess"
+                            style="@style/text_16_black_3"
+                            android:text="16.00"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/shape_rect_round_gray_3"
+                        android:text="已选座"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/expandable_toggle_button"
+                        android:layout_width="110dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/slt_btn_rect_green"
+                        android:text="选座位"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                </FrameLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/driver_h"/>
+
+        <LinearLayout
+            android:id="@+id/rect_inforOrderMess"
+            style="@style/ll_m_w_v_c"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_numStoreOrderMessComplete"
+                    style="@style/base_et"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_user_complete_infor"
+                    android:editable="false"
+                    android:gravity="bottom"
+                    android:hint="请填写座位号"
+                    android:inputType="number"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/slt_btn_rect_green"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_h"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    style="@style/text_12_black_3"
+                    android:text="请到餐厅"/>
+
+                <TextView
+                    style="@style/text_12_green"
+                    android:text="雷锋就餐区"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/text_12_black_3"
+                    android:text="，然后输入桌面左下角的编号"/>
+            </LinearLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:id="@+id/rect_codeOrderMess"
+                style="@style/ll_m_w_h_c"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_codeOrderMessComplete"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/shape_rect_round_gray"/>
+
+                <TextView
+                    style="@style/text_12_black_3"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="left"
+                    android:text="如果食堂没有餐位，请到雷锋取餐窗口出示此二维码领取套餐"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_item_order_no_pay"/>
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_rectHelpFoodPay"
+    style="@style/base_m_w"
+    android:layout_height="80dp"
+    android:padding="12dp" >
+
+    <TextView
+        style="@style/text_14_black_1"
+        android:text="是否愿意为同宿舍的同学带个饭?" />
+
+    <LinearLayout
+        style="@style/ll_w_w_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/btn_noHelpFoodPay"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_rect_round_white"
+            android:text="否"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_yesHelpFoodPay"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/slt_btn_rect_green"
+            android:text="我愿意"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

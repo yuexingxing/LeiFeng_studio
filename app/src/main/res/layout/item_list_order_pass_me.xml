@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fresco="http://schemas.android.com/tools"
+             android:id="@+id/rectItemContentPassMe"
+             style="@style/base_m_m">
+
+    <LinearLayout
+        android:id="@+id/rectItemContentPassMeHasPay"
+        style="@style/ll_m_w_v"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rectOrderTitlePassMe"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_stateOrderPassMe"
+                style="@style/text_14_green"
+                android:layout_centerVertical="true"
+                android:text="正在派送中"/>
+
+            <LinearLayout
+                android:id="@+id/rect_arrivalTimeOrderPassMe"
+                style="@style/ll_w_w_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/text_14_green"
+                    android:text="预计到达时间 "/>
+
+                <TextView
+                    android:id="@+id/tv_timeArriveOrderPassMe"
+                    style="@style/text_14_green"
+                    android:text="08-06 12:30"/>
+            </LinearLayout>
+
+            <View
+                style="@style/driver_h"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/ll_m_w_h"
+            android:layout_height="104dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/tv_picOrderPassMe"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                fresco:placeholderImage="@drawable/icon_empty_good"
+                fresco:roundedCornerRadius="3dp"
+                fresco:roundingBorderColor="@color/com_driver"
+                fresco:roundingBorderWidth="1px"/>
+
+            <RelativeLayout
+                android:id="@+id/rectOrderInforPay"
+                style="@style/base_m_m"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout style="@style/ll_w_w_v">
+
+                    <TextView
+                        android:id="@+id/tv_nameOrderPassMe"
+                        style="@style/text_14_black_1"
+                        android:text="第一餐厅"/>
+
+                    <TextView
+                        android:id="@+id/tv_nameGoodOrderPassMe"
+                        style="@style/text_12_black_2"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="海鲜全套餐"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/view_callOrderPassMe"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/slt_btn_rect_green"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_order_take_away_call"/>
+
+                    <TextView
+                        style="@style/base_w_w"
+                        android:layout_marginLeft="5dp"
+                        android:text="联系送餐人"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_enter_gray"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/driver_h"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_item_order_no_pay"/>
+</FrameLayout>
+

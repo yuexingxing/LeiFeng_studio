@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_buycar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/black">
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        android:id="@+id/ll_buycar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/ll_w_w_h"
+            android:gravity="center_vertical">
+
+            <LinearLayout style="@style/ll_w_w_h">
+
+                <TextView
+                    style="@style/text_16_white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="实付 " />
+
+                <TextView
+                    style="@style/text_16_white"
+                    android:textSize="16sp"
+                    android:text="￥" />
+
+                <TextView
+                    android:id="@+id/tv_sumPriceFoodPay"
+                    style="@style/text_16_white"
+                    android:textSize="16sp"
+                    android:text="0.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                style="@style/ll_w_w_h">
+
+                <LinearLayout
+                    android:id="@+id/rect_couponFoodPay"
+                    style="@style/ll_w_w_h">
+
+                    <TextView
+                        style="@style/text_12_black_3"
+                        android:layout_marginLeft="10dp"
+                        android:text="(已优惠"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        style="@style/text_14_black_3"
+                        android:text="￥"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_discountCutFoodPay"
+                        style="@style/text_14_black_3"
+                        android:text="5.00"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        style="@style/text_12_black_3"
+                        android:text=")"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.tajiang.leifeng.view.ClickButton
+        android:id="@+id/btn_payOrder"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="确认下单"
+        android:textSize="16sp" />
+
+</RelativeLayout>

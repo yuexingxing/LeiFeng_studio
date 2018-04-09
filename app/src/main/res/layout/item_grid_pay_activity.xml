@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/ivPayActivityBg"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_pay_activity_normal" />
+
+        <TextView
+            android:id="@+id/tvDesPayActivity"
+            style="@style/text_14_black_1"
+            android:layout_gravity="center"
+            android:text="100元（送10元）" />
+
+    </FrameLayout>
+
+</FrameLayout>

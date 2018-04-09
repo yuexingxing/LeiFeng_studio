@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_w"
+
+    android:background="@color/com_layout_bg">
+
+    <LinearLayout
+        android:id="@+id/contenCoupon"
+        android:layout_height="85dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/img_coupon_used_background" >
+
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/ll_w_w_h"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_coupon_money"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/icon_money_gray"/>
+
+                <!--<TextView-->
+                <!--style="@style/text_14_black_1"-->
+                <!--android:text="￥" />-->
+
+                <TextView
+                    android:id="@+id/tv_priceUserCoupon"
+                    style="@style/text_14_black_1"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/text_color_gray"
+                    android:text="10.5"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_v"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="90dp" >
+
+                <TextView
+                    android:id="@+id/tv_type_description"
+                    style="@style/text_14_black_3"
+                    android:text="新用户注册专享"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_non_limit_coupon"
+                        style="@style/text_12_black_3"
+                        android:text="不限金额使用" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_limit_coupon"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/text_12_black_3"
+                            android:text="满 " />
+                        <TextView
+                            android:id="@+id/tv_coupon_limit_price"
+                            style="@style/text_14_black_3"
+                            android:textColor="@color/red_orange"
+                            android:text="10" />
+
+                        <TextView
+                            style="@style/text_12_black_3"
+                            android:text=" 减 " />
+
+                        <TextView
+                            android:id="@+id/tv_coupon_price"
+                            style="@style/text_14_black_3"
+                            android:textColor="@color/red_orange"
+                            android:text="1" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_endTimeUserCoupon"
+                    style="@style/text_10_black_3"
+                    android:text="有效期:   2015-10-12" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_describeUserCoupon"
+                    style="@style/text_12_black_1"
+                    android:layout_marginTop="10dp"
+                    android:text="可以使用" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/contenCoupon"-->
+        <!--style="@style/ll_m_w_h_c"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:background="@drawable/bg_coupon_able">-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/ll_w_w_h"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:gravity="bottom">-->
+
+            <!--<TextView-->
+                <!--style="@style/text_14_black_1"-->
+                <!--android:text="￥" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_priceUserCoupon"-->
+                <!--style="@style/text_14_black_1"-->
+                <!--android:text="6"-->
+                <!--android:textSize="30sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/ll_w_w_v"-->
+            <!--android:layout_marginLeft="30dp">-->
+
+            <!--<LinearLayout-->
+                <!--style="@style/ll_w_w_h"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<TextView-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:text="有效期" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_endTimeUserCoupon"-->
+                    <!--style="@style/text_12_black_2"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="2015-10-12" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_describeUserCoupon"-->
+                <!--style="@style/text_12_black_1"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="可以使用" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

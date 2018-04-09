@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rect_addressEmpty"
+    style="@style/ll_m_m_v"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_order_empty" />
+
+    <TextView
+        style="@style/text_14_black_3"
+        android:layout_marginTop="20dp"
+        android:text="您还没添加过地址，请添加地址" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/com_root_layout_ll_gray">
+
+    <LinearLayout style="@style/ll_m_m_v">
+
+
+        <RelativeLayout
+            android:id="@+id/rectCallServiceCenter"
+            style="@style/base_m_w"
+            android:layout_height="50dp"
+            android:background="@drawable/slt_rect_white"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding">
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_user_advise"/>
+
+                <TextView
+                    style="@style/text_14_black_5"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:text="客服电话" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_w_w_h_c"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="42dp">
+
+                <TextView
+                    style="@style/text_12_black_5"
+                    android:text="工作时间 10:30-19:00"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_enter_gray" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/driver_h" />
+
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rect_adviceServiceCenter"
+                style="@style/base_m_w"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_user_feedback"/>
+
+                    <TextView
+                        style="@style/text_14_black_5"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:text="意见反馈" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="42dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_enter_gray" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/driver_h"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:layout_marginRight="@dimen/common_padding"/>
+
+            <RelativeLayout
+                android:id="@+id/rect_questionServiceCenter"
+                style="@style/base_m_w"
+                android:layout_height="50dp"
+                android:background="@drawable/slt_rect_white"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_padding">
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_user_common_issue"/>
+
+                    <TextView
+                        style="@style/text_14_black_5"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:text="常见问题" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ll_w_w_h_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="42dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_enter_gray" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/driver_h" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
